@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+    
+    <entry>
+      <title><![CDATA[想看的书]]></title>
+      <url>/2017/07/09/Books/</url>
+      <content type="html"><![CDATA[<p>1.《营销管理》，(美)菲利普·科特勒</p>
+<p>2.&lt;&lt;计算机程序的构造和解释&gt;&gt; SS+</p>
+<p>3.《UNIX环境高级编程》SS</p>
+<p>4.《编程珠玑》S+</p>
+<p>5.《算法导论》S+</p>
+<p>6.《代码整洁之道》S</p>
+<p>7.《重构》S 改善代码</p>
+<p>8.《代码大全》S 用于查询</p>
+<p>9.《程序员的自我修养》</p>
+<p>10.《黑客与画家》 S</p>
+<hr>
+<h3 id="编程语言系-9-（转）"><a href="#编程语言系-9-（转）" class="headerlink" title="编程语言系 9+ （转）"></a>编程语言系 9+ （转）</h3><p>我当要学习某些技术时，第一时间就是去找相关的书籍。而豆瓣读书是我主要的参考依据，主要是它的评分基本比较靠谱，对于技术书籍，一般来说评分在8分以上就是不错的书籍了，而达到9分就可以列入”必读”系列了，所以我就打算总结一下豆瓣上评分9以上的技术书籍，本想一片文章完成的，可是经典著作太多了，因此这篇文章先把编程语言的书籍列出来。</p>
+<p><strong>汇编语言:</strong></p>
+<p>汇编语言（第2版） 9.3分</p>
+<p><strong>c语言:</strong></p>
+<p>c专家编程 本书讲了很多c语言的历史，很有趣 9.2分</p>
+<p>c和指针 书名略有歧义，本书全面讲解了c语言，是一本入门佳作 9.0分</p>
+<p>C程序设计语言 c语言之父作品，经典之作 9.4分</p>
+<p>C语言程序设计_现代方法 一本不错的入门书籍 9.2分</p>
+<p>C语言接口与实现 一本将c语言代码设计的著作 9.0分</p>
+<p>嗨翻C语言 head first 系列，书的形式非常有趣 9.1分</p>
+<p>C语言名题精选百则技巧篇 更像是一本算法书 9.0分</p>
+<p>一站式学习C编程 国人出品的优秀之作 9.2分</p>
+<p>编程精粹 教你如何写出良好的c程序 9.0分</p>
+<p><strong>c++:</strong></p>
+<p>C++ Primer 中文版(第4版 无需解释的经典c++著作 9.2分</p>
+<p>C程序设计语言(特别版) 可能是因为翻译的原因，这本c之父的经典著作”仅”8.9分 8.9分</p>
+<p>C语言的设计和演化 c之父又一经典之作 8.8分</p>
+<p>Effective C中文版 想知道如何写出更好的c程序，看这本书 9.2分</p>
+<p>More Effective C++中文版 推荐理由同上 8.9分</p>
+<p>Effective STL中文版 你真的知道如何使用stl吗 8.8分</p>
+<p>深度探索C++对象模型 内容较深，适合有经验的修炼内功 9.1分</p>
+<p>C设计新思维 这本书向你展示c模板的高（奇）级（淫）技巧 8.9分</p>
+<p><strong>c#:</strong></p>
+<p>CLR via C#一书作者所著 9.4分</p>
+<p>Head First C# Head first系列自然不会放过c# 9.0分</p>
+<p>深入理解C#（第2版）一本全面讲解c#语言的优秀著作 9.0分</p>
+<p>Microsoft.NET框架程序设计作者又一经典著作 9.1分</p>
+<p>C#与 .NET 3.5高级程序设计 9.0分</p>
+<p>.NET设计规范 9.1分</p>
+<p><strong>java:</strong></p>
+<p>Java编程思想（第4版） 9.1分</p>
+<p>Java并发编程实战 9.0分</p>
+<p>Effective java 中文版（第2版）9.1分</p>
+<p>Head First Java（第二版·中文版） 8.8分</p>
+<p>Spring揭秘 9.0分</p>
+<p><strong>javascript:</strong></p>
+<p>JavaScript高级程序设计（第3版） 最好的Javascript入门书籍 9.3分</p>
+<p>JavaScript权威指南(第6版) 犀牛书 8.9分</p>
+<p>JavaScript语言精粹 短小精悍的书籍，深入讲解javascript优秀之作 9.1分</p>
+<p>JavaScript设计模式与开发实践 国人出品，作者出身鹅肠 9.2分</p>
+<p>精通JavaScript 大名鼎鼎的jquery作者著作 8.6分</p>
+<p>你不知道的JavaScript（上卷） 非常棒的javacript讲解书籍 9.4分</p>
+<p>你不知道的JavaScript（中卷） es6的很多特性在这本书中有非常深入的讲解 8.9分</p>
+<p><strong>Python:</strong></p>
+<p>从Python开始学编程 适合新手阅读 9.0分</p>
+<p>Python编程：从入门到实践 同样是一本入门书籍 8.8分</p>
+<p>Python源码剖析 据说这本书其实是讲c语言的 8.7分</p>
+<p>深入浅出Python（影印版） Python的head first系列 8.5分</p>
+<p><strong>Ruby:</strong></p>
+<p>Ruby元编程 9.5分</p>
+<p><strong>go语言:</strong></p>
+<p>the Go Programming Language 9.3分</p>
+<p>其实上面列出的并不是每一本评分都达到9分了，不过也十分经典，因此一并列出。</p>
+<hr>
+]]></content>
+      
+        <categories>
+            
+            <category> Books/Movies </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[想看的电影]]></title>
+      <url>/2017/07/09/%E7%94%B5%E5%BD%B1/</url>
+      <content type="html"><![CDATA[<h3 id="想看的电影"><a href="#想看的电影" class="headerlink" title="想看的电影"></a>想看的电影</h3><p>1.禁闭岛 8.6</p>
+<p>2.无姓之人 8.2</p>
+<p>3.僵尸肖恩 7.7</p>
+<p>4.我是传奇 7.8</p>
+<p>5.人类之子 7.4</p>
+<p>6.大鱼海棠 6.6</p>
+<p>7.恐怖游轮 8.3</p>
+<blockquote>
+<p>2016-12-11 已看</p>
+</blockquote>
+<p>8.黑洞频率 8.3</p>
+<p>9.超时空接触 8.3</p>
+<p>10.彗星来的那一夜（14年） 8.3</p>
+<p>11.记忆碎片 8.5</p>
+<blockquote>
+<p>2017-03-04 已看</p>
+</blockquote>
+<p>12.未知死亡 8.0</p>
+<p>13.泰坦尼克号 9.5</p>
+<blockquote>
+<p>2016-12-16 已看已哭瞎，爱情观被刷新<br>感谢小学班主任当初让我成熟点再看。</p>
+</blockquote>
+<p>14.寄生兽 7.4</p>
+<p>15.西部世界（美剧） 9.1</p>
+<p>16.疯狂的麦克斯4：狂暴之路 8.5</p>
+<blockquote>
+<p>已看，一般般</p>
+</blockquote>
+<p>17.死亡诗社 8.9</p>
+<p>18.蝙蝠侠：黑暗骑士 9.0</p>
+<blockquote>
+<p>2017-4-4 已看，真TM好看</p>
+</blockquote>
+<p>19.黑客帝国三部曲 8.5</p>
+<p>20.你的名字 8.6</p>
+<blockquote>
+<p>2016-12-04  很好看，超喜欢这种唯美画风的。</p>
+</blockquote>
+<p>21.钢之炼金术师FA 9.4 剧情一流 （动漫 65集）</p>
+<p>22.银魂 9.6 据说看几集就会爱上。</p>
+<p>23.自杀小队 8.2 因Heathens.而看</p>
+<blockquote>
+<p>已看，剧情一般，不过小丑他俩演的真不错，当然还是歌好听~</p>
+</blockquote>
+<p>24.永无止境 8.0</p>
+<p>25.教父 9.2 三部曲</p>
+<blockquote>
+<p>已看，去年考试前几天通宵看完的。</p>
+</blockquote>
+<p>26.未麻的部屋 8.8</p>
+<blockquote>
+<p>已看，还不错吧。</p>
+</blockquote>
+<p>27.致命ID 8.6 （类禁闭岛）</p>
+<p>28.降临 7.7</p>
+<p><strong>丧尸类：</strong></p>
+<p>1.群尸玩过界 Braindead (1992) 7.7 喜剧 血腥</p>
+<p>2.僵尸肖恩 Shaun of the Dead (2004) 7.7 喜</p>
+<p>3.活死人黎明 Dawn of the Dead (2004) 7.4</p>
+<p>4.丧尸乐园 Zombieland (2009)/僵尸之地 7.2 恶搞 喜</p>
+<p>5.请叫我英雄 アイアムアヒーロー (2016) 7.0</p>
+<p><strong>评价 非常高的两部电影:</strong></p>
+<p><em>恐怖</em>：第六感 The Sixth Sense (1999) 8.8 （千万别提前知道结局。）</p>
+<p>———— 全美观众票选1999年最喜爱的影片。惊悚悬疑片，其中有几个镜头确实突兀吓了我一跳。猛男布鲁斯·威利斯向来演那种枪战动作片，例如虎胆龙威系列，此片算是文戏，但他的拿捏相当到位，里面的主角小演员简直是天才童星。</p>
+<p><em>剧情类</em>：十二怒汉 12 Angry Men (1957) 9.3</p>
+<p>———————知道这是一部牛片，只是没想到居然这么牛。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> Books/Movies </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[用Atom打造最骚的markdown编辑器]]></title>
+      <url>/2017/07/09/%E7%94%A8Atom%E6%89%93%E9%80%A0%E6%9C%80%E9%AA%9A%E7%9A%84markdown%E7%BC%96%E8%BE%91%E5%99%A8/</url>
+      <content type="html"><![CDATA[<h2 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h2><p>这几天忙活了下，终于搭建好了网站。但写文章是要用到markdown编辑器的</p>
+<p>找来找去没有找到一款喜欢的，也是懒得再下什么了，在网上看到一个教程</p>
+<p>可以把Atom打造成一款很棒的markdown编辑器，所以我决定开刚，然鹅，</p>
+<p>刚是刚了，但是自己动起手来却没教程那么如意，整了半天总算是成功了。</p>
+<p>现在我就用它发布了这篇文章</p>
+<p>而我们为什么选择它呢？</p>
+<p><strong>Ctrl+C  +  Ctrl+V：↓</strong></p>
+<blockquote>
+<p>Atom是GitHub推出的一款编辑器, 被称为21世纪的黑客编辑器. 其主要的特点是现代, 易用, 可定制.<br>本人以前用过多款编辑器, 现在来总结一下个人对各编辑器的看法:<br>Vim是我使用最久也是最折腾的编辑器<br>其优点是逼格高, 定制性强, 编辑效率高, 资源占用少, 还可以终端操作.</p>
+</blockquote>
+<p>好，废话不多说，下面开搞！！</p>
+<h2 id="安装Atom"><a href="#安装Atom" class="headerlink" title="安装Atom"></a>安装Atom</h2><p>1.下载安装: <a href="https://atom.io/" target="_blank" rel="external"><font color="green">Atom</font></a></p>
+<p>好，在成功安装好Atom后，我们还需要下载并安装插件</p>
+<h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>我太懒了，所以就放一个链接吧：<a href="http://blog.csdn.net/u010494080/article/details/50605654" target="_blank" rel="external"><font color="blue">关于Atom插件的安装</font></a></p>
+<p>这个链接还有Atom的其他教程，适合刚接触Atom的看。</p>
+<h3 id="以下几款插件加上去可以让你的Atom写markdown"><a href="#以下几款插件加上去可以让你的Atom写markdown" class="headerlink" title="以下几款插件加上去可以让你的Atom写markdown"></a>以下几款插件加上去可以让你的Atom写markdown</h3><h4 id="1-增强预览-markdown-preview-plus"><a href="#1-增强预览-markdown-preview-plus" class="headerlink" title="1.增强预览(markdown-preview-plus)"></a>1.增强预览(markdown-preview-plus)</h4><p>Atom自带的Markdown预览插件markdown-preview功能比较简单，markdown-preview-plus对其做了功能扩展和增强。</p>
+<p>支持预览实时渲染。(Ctrl + Shift + M)</p>
+<p>支持Latex公式。(Ctrl + Shift + X)</p>
+<p><strong>注意!</strong> 使用该插件前，需要先 <strong>禁用markdown-preview</strong> 。</p>
+<h4 id="2-同步滚动-markdown-scroll-sync"><a href="#2-同步滚动-markdown-scroll-sync" class="headerlink" title="2.同步滚动(markdown-scroll-sync)"></a>2.同步滚动(markdown-scroll-sync)</h4><p>同步滚动是Markdown编辑器的必备功能，方便翻阅文档修改时能快速定位到预览的位置。</p>
+<p>markdown-scroll-sync不仅支持同步滚动，在光标位置发生变更时也会同步滚动</p>
+<p>这个功能在很多Markdown编辑器中不具备。</p>
+<h4 id="3-代码增强-language-markdown"><a href="#3-代码增强-language-markdown" class="headerlink" title="3.代码增强(language-markdown)"></a>3.代码增强(language-markdown)</h4><p>一般的Markdown编辑器提供了代码着色等基本功能，language-markdown除了能给代码着色</p>
+<p>还提供了快捷的代码片段生成等功能。</p>
+<h4 id="4-图片粘贴-markdown-image-paste"><a href="#4-图片粘贴-markdown-image-paste" class="headerlink" title="4.图片粘贴(markdown-image-paste)"></a>4.图片粘贴(markdown-image-paste)</h4><p>图片功能支持的好坏直接决定了我们是否选择使用一个Markdown编辑器。也有不少编辑器和在线</p>
+<p>的图床绑定，但是这种方式受限于网络。虽然Markdown支持插入本地图片，但是每次插入新图片</p>
+<p>都是一堆重复操作：截图－命名－保存－插入。markdown-image-paste将这些操作一步完成：</p>
+<p>使用截图工具将图片复制到系统剪切板。</p>
+<p>在Markdown新起一行输入文件名。</p>
+<p>Ctrl + V 会自动把图片保存到Markdown文件相同目录下(因此要求Markdown文件应该先保存</p>
+<p>并命名为刚输入的文件名，同时在刚才输入文件名行处生成img标签。</p>
+<p>不过gif图就不这样做了，这个另外查吧。</p>
+<h4 id="5-表格编辑-markdown-table-editor"><a href="#5-表格编辑-markdown-table-editor" class="headerlink" title="5.表格编辑(markdown-table-editor)"></a>5.表格编辑(markdown-table-editor)</h4><p>Markdown的table语法很无爱，直到遇到了markdown-table-editor</p>
+<p>使用详情请看插件自带演示</p>
+<h4 id="6-pdf导出-markdown-themeable-pdf、pdf-view"><a href="#6-pdf导出-markdown-themeable-pdf、pdf-view" class="headerlink" title="6.pdf导出(markdown-themeable-pdf、pdf-view)"></a>6.pdf导出(markdown-themeable-pdf、pdf-view)</h4><p>不少Markdown编辑器都会提供pdf导出功能，甚至将其作为收费功能。</p>
+<p>而Atom的markdown-themeable-pdf、pdf-view插件可以轻松实现pdf导出和预览功能。</p>
+<blockquote>
+<h4 id="以上六款插件能够让你的Atom独领风骚。"><a href="#以上六款插件能够让你的Atom独领风骚。" class="headerlink" title="以上六款插件能够让你的Atom独领风骚。"></a>以上六款插件能够让你的Atom独领风骚。</h4></blockquote>
+<h3 id="遇到的坑——插件无法安装"><a href="#遇到的坑——插件无法安装" class="headerlink" title="遇到的坑——插件无法安装"></a>遇到的坑——插件无法安装</h3><p><strong>其实，这才是我想写这篇博文的理由</strong></p>
+<p>教程很简单如果可以安装插件的话那很顺利，</p>
+<p>但坑爹的是，插件不能安装是不是？？</p>
+<p>atom通过setting中无法下载插件</p>
+<p>通过apm也无法下载插件</p>
+<p>可能是网络、config配置的问题，不好解决。</p>
+<hr>
+<p>好，下面我来提供解决Windows下Atom插件安装失败的方法</p>
+<p>纯手动但基本属于万金油方法：</p>
+<p>1.打开Atom –&gt; File –&gt; Settings –&gt; Install  –&gt; 下面看图</p>
+<p>注意图中的路径<img src="http://ossdpnhoy.bkt.clouddn.com/bowensQQ%E5%9B%BE%E7%89%8720170709030602.png" alt="lujin"></p>
+<p>复制，然后用电脑打开（不是用浏览器）</p>
+<p>这个路径是Atom插件安装的位置</p>
+<p>2，打开 <a href="https://atom.io/packages" target="_blank" rel="external"><font color="red">Atom插件官网</font></a> 查找上述或者需要的插件</p>
+<p>3，选择插件中的repo，复制github地址</p>
+<p>4，在步骤一的文件夹中运行git bash命令</p>
+<p>5.下载插件包 在git bash中输入：git clone (你复制的github链接,注意复制前要有个空格)</p>
+<p>6.注意！这时候只是把插件下载到了路径下，而没有安装。</p>
+<p>7.等安装完后插件文件夹会出现插件的名字，接着，打开刚安装的插件文件夹，然后在文件夹中运行git bash命令</p>
+<p>8.在git bash中输入 :</p>
+<pre><code>npm install
+</code></pre><p>等待片刻安装完成，安装的时间与网络有关，有时候需要等久一点。</p>
+<p>10.下面是安装成功的示例图：<br><img src="http://ossdpnhoy.bkt.clouddn.com/2.jpg" alt="tu1"></p>
+<p>安装成功后鼠标会回到$符号后<br><img src="http://ossdpnhoy.bkt.clouddn.com/3.png" alt="tu2"></p>
+<hr>
+<h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>这就是比较万金油的纯手动法解决Atom插件安装失败的方法。</p>
+<p>如果在该教程中有问题的，可以联系我，在博客主页上面有我的联系方式</p>
+<p>点击右边的按钮再点下面的Email Me 就可以直接QQ对话。如果我会的，我可以帮你解决。</p>
+<p>好了，困死我了。睡觉</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 技术流 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Atom markdown </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Unity3D]]></title>
+      <url>/2017/07/08/Unity3D/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> Unity3D </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Python]]></title>
+      <url>/2017/07/08/Python/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> Python </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[CSharp]]></title>
+      <url>/2017/07/08/CSharp/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> C/C++ C# </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Java]]></title>
+      <url>/2017/07/08/Java/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> Java </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[轻描淡写]]></title>
+      <url>/2017/07/08/%E8%BD%BB%E6%8F%8F%E6%B7%A1%E5%86%99/</url>
+      <content type="html"><![CDATA[<p>忘了很久的名字，又出现了呢。</p>
+<p>可真叫人伤心。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 自言自语 </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[各种摘录]]></title>
+      <url>/2017/07/08/%E5%90%84%E7%A7%8D%E6%91%98%E5%BD%95/</url>
+      <content type="html"><![CDATA[<hr>
+<p>最美的感情，永远出现在最不懂爱的年纪。</p>
+<hr>
+<p>你好像瘦了，头发也变长，背影陌生到让我觉得，见你是上个世纪的事，然后你开口叫我名字，我就想笑，好像自己刚刚放学，只在校门口等了你五分钟而已。</p>
+<pre><code>                    ——一生有你，水木年华。
+</code></pre><hr>
+<p>惟愿终生等候，换你刹那凝眸</p>
+<hr>
+<p> 其实我有时候会想，什么样的男的会要<em>*</em>这样的女子。对着镜子照了照，马上找到了满意的答案。</p>
+<hr>
+<p>年轻时不多经历一点 老了拿什么下酒？</p>
+<p>—-拿故事来下酒只怕是比酒还苦吧。</p>
+<hr>
+<p>妈妈说：“如果你越来越冷漠，你以为你成长了，但其实没有。长大应该是变得温柔，对全世界都温柔。</p>
+<pre><code>                                       ——Where Is The Love（Soule Rework) &amp;&amp; 三季人
+</code></pre><hr>
+<p>人的一生，要死去三次。 第一次，当你的心跳停止，呼吸消逝，你在生物学上被宣告了死亡； 第二次，当你下葬，人们穿着黑衣出席你的葬礼，他们宣告，你在这个社会上不复存在，你悄然离去； 第三次死亡，是这个世界上最后一个记得你的人，把你忘记，于是，你就真正地死去。整个宇宙都将不再和你有关。</p>
+<pre><code>                         —— Medicine (Sound Remedy Remix)
+</code></pre><hr>
+]]></content>
+      
+        <categories>
+            
+            <category> 爱我所爱 </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Hello World]]></title>
+      <url>/2017/07/04/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span>
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy
+</code></pre>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+      
+        
+    </entry>
+    
+  
+  
+    
+    <entry>
+      <title><![CDATA[Nanki]]></title>
+      <url>/about.html</url>
+      <content type="html"><![CDATA[<h2 id="关于我："><a href="#关于我：" class="headerlink" title="关于我："></a>关于我：</h2><p>此人很懒什么都没有留下，但他依旧很帅。</p>
+<p><strong>其实也没什么好说的</strong></p>
+<blockquote>
+<p>假装无fuck可说。</p>
+</blockquote>
+<h4 id="好吧："><a href="#好吧：" class="headerlink" title="好吧："></a>好吧：</h4><p>我很懒</p>
+<p>喜欢宅着</p>
+<p>喜欢动漫</p>
+<p>嗯….最喜欢《RE：从零开始的异世界生活》</p>
+<p>喜欢《东京喰种》</p>
+<p>还有蕾姆酱~</p>
+<blockquote>
+<p>如果真爱有颜色，那一定是#66CCFF(蓝色)的。</p>
+</blockquote>
+<h4 id="游戏方面："><a href="#游戏方面：" class="headerlink" title="游戏方面："></a>游戏方面：</h4><p>兼容大多数游戏</p>
+<p>以前喜欢玩LOL</p>
+<blockquote>
+<p>内测玩家，也是唯一一款不把它当作游戏的游戏，不过现在已经退出了。嗯，很怀念以前和老战友开黑的时光，喜欢若风，草莓，微笑时代的WE，也喜欢那时候有PDD和笑笑的IG。还有欧洲王者战队M5，世界第一冰鸟Froggen，无敌中单Alex.满满的回忆….</p>
+</blockquote>
+<p>现在不怎么玩游戏了</p>
+<p>偶尔会和朋友开黑玩魔兽争霸3</p>
+<p>联机玩各种防守图，RPG..仙之侠道系列。</p>
+<p>最喜欢的单机是骑马与砍杀吧。</p>
+<p>现在可是超期待骑砍2发售的。</p>
+<blockquote>
+<p>希望有生之年能等到。</p>
+</blockquote>
+<h4 id="音乐："><a href="#音乐：" class="headerlink" title="音乐："></a>音乐：</h4><p>对我来说</p>
+<p>可以没有游戏和动漫</p>
+<p>但如果没有音乐</p>
+<p>那么这个世界也就没什么意义了吧。</p>
+<p>其实我只是个初烧</p>
+<p>设备方面:信仰系列———<strong>IE80</strong></p>
+<p>前端待入。</p>
+<blockquote>
+<p>喜欢森海塞尔的，睡觉的时候喜欢听歌，睡坏了3条，其中有一条CX215的。说多了是泪…</p>
+</blockquote>
+<p><strong>网易云传送门:</strong>  <a href="http://music.163.com/#/user/home?id=72503434" target="_blank" rel="external"><font color="red">Nankis</font></a></p>
+<blockquote>
+<p>网易云重度患者，偶尔会在动态发骚话…</p>
+</blockquote>
+<h4 id="理想："><a href="#理想：" class="headerlink" title="理想："></a>理想：</h4><p>写没人看的小说</p>
+<p>做没人玩的游戏</p>
+<p>旅没有人陪的游</p>
+<h4 id="补充："><a href="#补充：" class="headerlink" title="补充："></a>补充：</h4><p>对了，忘记告诉你们一个秘密</p>
+<p>咖啡+网易云+代码=绝配</p>
+<blockquote>
+<p>以前迷信科学<br>现在相信玄学<br>(手动滑稽)</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+  
+</search>
