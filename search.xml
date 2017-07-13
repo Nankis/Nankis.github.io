@@ -266,20 +266,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Python]]></title>
-      <url>/2017/07/08/Python/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> Python </category>
-            
-        </categories>
-        
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[CSharp]]></title>
       <url>/2017/07/08/CSharp/</url>
       <content type="html"></content>
@@ -287,6 +273,20 @@
         <categories>
             
             <category> C/C++ C# </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Python]]></title>
+      <url>/2017/07/08/Python/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> Python </category>
             
         </categories>
         
@@ -565,7 +565,7 @@
     <entry>
       <title><![CDATA[Nanki]]></title>
       <url>/about.html</url>
-      <content type="html"><![CDATA[<h2 id="关于我："><a href="#关于我：" class="headerlink" title="关于我："></a>关于我：</h2><p>此人很懒什么都没有留下，但他依旧很帅。</p>
+      <content type="html"><![CDATA[<h2 id="关于我："><a href="#关于我：" class="headerlink" title="关于我："></a>关于我：</h2><p>此人很懒什么都没留下，但他依旧很帅。</p>
 <p><strong>其实也没什么好说的</strong></p>
 <blockquote>
 <p>假装无fuck可说。</p>
