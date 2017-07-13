@@ -227,7 +227,7 @@
 <p>7.等安装完后插件文件夹会出现插件的名字，接着，打开刚安装的插件文件夹，然后在文件夹中运行git bash命令</p>
 <p>8.在git bash中输入 :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure></p>
 <p>等待片刻安装完成，安装的时间与网络有关，有时候需要等久一点。</p>
-<p>10.下面是安装成功的示例图：<br><img src="http://ossdpnhoy.bkt.clouddn.com/2.jpg" alt="tu1"></p>
+<p>10.下面是安装成功的示例图：<br><img src="http://ossdpnhoy.bkt.clouddn.com/Atom1.jpg" alt="tu1"></p>
 <p>安装成功后鼠标会回到$符号后<br><img src="http://ossdpnhoy.bkt.clouddn.com/3.png" alt="tu2"></p>
 <hr>
 <h4 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h4><p>这就是比较万金油的纯手动法解决Atom插件安装失败的方法。</p>
