@@ -266,20 +266,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Python]]></title>
-      <url>/2017/07/08/Python/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> Python </category>
-            
-        </categories>
-        
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[CSharp]]></title>
       <url>/2017/07/08/CSharp/</url>
       <content type="html"></content>
@@ -287,6 +273,20 @@
         <categories>
             
             <category> C/C++ C# </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Python]]></title>
+      <url>/2017/07/08/Python/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> Python </category>
             
         </categories>
         
@@ -373,6 +373,109 @@
 <h3 id="7-连接"><a href="#7-连接" class="headerlink" title="7.连接"></a>7.连接</h3><p>下载Shadow Socks客户端。SS加速器客户端下载</p>
 <p>选择适合的版本，下载并解压运行。</p>
 <p>填写信息:服务器地址，端口号，密码，加密方式与代理端口默认即可</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 技术流 </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[关于CentOS6/7iptables的配合科学**的配置]]></title>
+      <url>/2017/07/08/CentOS67iptables%E9%85%8D%E7%BD%AE/</url>
+      <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>emmmmmm……</p>
+<p>关于这方面的坑碰到的太多了,每次都做的差不多了,就差这一步…</p>
+<p>在找了N久后,终于找到了一个灰常满意的答案,我决定直接写下来用以释放我心中奔腾的十万只草泥马….</p>
+<h4 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h4><ul>
+<li>CentOS6</li>
+<li>你懂得</li>
+<li>iptables</li>
+</ul>
+<blockquote>
+<p>在安装了ss-bash后，ss-bash每添加一次port就会在iptables中的SSOUTPUT和SSINPUT中添加相对应的port作为ACCEPT，所以我们只需保留部分必备port，将其他端口DROP就可以了。</p>
+</blockquote>
+<h3 id="CentOS6"><a href="#CentOS6" class="headerlink" title="CentOS6"></a>CentOS6</h3><h4 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h4><p>由于我们的目的是放弃所有无关于shadowsocks的数据，也就是说默认丢弃所有数据</p>
+<p>只接受满足条件的数据，无疑是一种很安全的做法。</p>
+<p>首先添加ssh端口：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">iptables -A INPUT -p tcp --dport 22 -j ACCEPT</div><div class="line"></div><div class="line">#22自行修改，如我设置的 8888 端口</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">添加以下六条规则：</div><div class="line">iptables -A INPUT -p icmp --icmp-type any -j ACCEPT</div><div class="line">#允许icmp包进入</div><div class="line"></div><div class="line">iptables -A INPUT -s localhost -d localhost -j ACCEPT</div><div class="line">#允许本地的数据包</div><div class="line"></div><div class="line">iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT</div><div class="line">#允许已经建立和相关的数据包进入</div><div class="line"></div><div class="line">iptables -A OUTPUT -p icmp --icmp any -j ACCEPT</div><div class="line">#允许icmp包出去</div><div class="line"></div><div class="line">iptables -A OUTPUT -s localhost -d localhost -j ACCEPT</div><div class="line">#允许本地数据包</div><div class="line"></div><div class="line">iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT</div><div class="line">#允许已经建立和相关的数据包出去</div></pre></td></tr></table></figure>
+<p><strong>需要注意的是，以上的七条基本上是必须添加的；下面开始添加其他必要端口：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">iptables -A OUTPUT -p udp --dport 53 -j ACCEPT</div><div class="line"> #打开DNS需要用到的53端口</div><div class="line"></div><div class="line">iptables -A OUTPUT -p tcp -m state --state NEW --dport 80 -j ACCEPT</div><div class="line">#允许80端口tcp协议的第一个数据包</div><div class="line"></div><div class="line">iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT</div><div class="line">#允许ESTABLISHED和RELATED状态的包</div><div class="line"></div><div class="line">iptables -A INPUT -p tcp --dport 443 -j ACCEPT</div><div class="line">#打开https需要用到的443端口</div></pre></td></tr></table></figure>
+<p><strong>请注意，重启命令如果是CentOS 6 可以这样执行</strong><br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">service iptables save #保存配置</div><div class="line"></div><div class="line">service iptables restart #重启iptables</div></pre></td></tr></table></figure></p>
+<h3 id="CentOS7-配置iptables"><a href="#CentOS7-配置iptables" class="headerlink" title="CentOS7 配置iptables"></a>CentOS7 配置iptables</h3><blockquote>
+<p>CentOS从7.0开始，默认防火墙更改为firewall</p>
+<p>但如果想继续使用iptables，请按照以下命令执行：</p>
+</blockquote>
+<p>关闭firewall：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">systemctl stop firewalld.service #关闭firewall</div><div class="line"></div><div class="line">systemctl disable firewalld.service #禁止firewall开机启动</div></pre></td></tr></table></figure></p>
+<p>安装iptables：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">yum install iptables-services</div><div class="line"></div><div class="line">#安装iptables;安装前可先‘iptables -L -n’测试是否安装</div></pre></td></tr></table></figure>
+<p>之后按照以上的CentOS 6 进行配置，但需要注意的是，7.0的重启命令为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">systemctl restart iptables.service  #重启iptables</div></pre></td></tr></table></figure></p>
+<p>另外还需要设置开机启动（7.0）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">systemctl enable iptables.service   #设置iptables开机启动</div></pre></td></tr></table></figure></p>
+<p>至此，关于iptables配置已经完成</p>
+<h3 id="iptables的补充"><a href="#iptables的补充" class="headerlink" title="iptables的补充"></a>iptables的补充</h3><h4 id="iptables的state各个状态的含义"><a href="#iptables的state各个状态的含义" class="headerlink" title="iptables的state各个状态的含义:"></a>iptables的state各个状态的含义:</h4><blockquote>
+<p>state只有四种状态：NEW，ESTABLISHED，RELATED 和INVALID它们主要是和状态匹配一起使用。</p>
+</blockquote>
+<p>下面就简要地介绍以下这几种状态：</p>
+<h4 id="数据包在用户空间的状态"><a href="#数据包在用户空间的状态" class="headerlink" title="数据包在用户空间的状态"></a>数据包在用户空间的状态</h4><p>State（状态） Explanation（注释）</p>
+<hr>
+<p>NEW：<br>NEW说明这个包是我们看到的第一个包。意思就是</p>
+<p>这是conntrack模块看到的某个连接第一个包，它即将被匹配了。</p>
+<p>比如，我们看到一个SYN 包，是我们所留意的连接的第一个包，就要匹配它。</p>
+<p>第一个包也可能不是SYN包，但它仍会被认为是NEW状态。这样做有时会导致一些问题</p>
+<p>但对某些情况是有非常大的帮助的。例如，在 我们想恢复某条从其他的防火墙丢失的</p>
+<p>连接时，或者某个连接已经超时，但实际上并未关闭时。</p>
+<hr>
+<hr>
+<p>ESTABLISHED:</p>
+<p>ESTABLISHED已经注意到两个方向上的数据传输，而且会继续匹配这个连接的包。</p>
+<p>处于ESTABLISHED状态的连接是非常容易理解的。只要发送并接到应答，</p>
+<p>连接就是ESTABLISHED的了。一个连接要从NEW变 为ESTABLISHED，只需要接到应答包即</p>
+<p>可，不管这个包是发往防火墙的，还是要由防 火墙转发的。ICMP的错误和重定向等信息</p>
+<p>包也被看作是ESTABLISHED，只要它们是我们所发出的信息的应答。</p>
+<hr>
+<hr>
+<p>RELATED:</p>
+<p>RELATED是个比较麻烦的状态。当一个连接和某个已处于ESTABLISHED状态的连接有关</p>
+<p>系时，就被认为是RELATED的了。</p>
+<p>换句话说，一个连接要想是RELATED的，首先要有一个ESTABLISHED的连接。</p>
+<p>这个ESTABLISHED连接再产生一个主连接之外的连接，这个新的连接就是RELATED的了</p>
+<p>当然前提是conntrack模块要能理解RELATED。ftp是个很好的例子，FTP-data连接</p>
+<p>就是和FTP-control有RELATED的。还有其他的例子，比如，通过IRC的DCC连接。</p>
+<p>有了这个状态，ICMP应答、FTP传输、DCC等才能穿过防火墙正常工作。</p>
+<p>注意，大部分还有一些UDP协议都依赖这个机制。这些协议是很复杂的，它们把连接信息放在</p>
+<p>数据包里，并且要求这些信息能被正确理解。</p>
+<hr>
+<hr>
+<p>INVALID:</p>
+<p>INVALID说明数据包不能被识别属于哪个连接或没有任何状态。</p>
+<p>有几个原因可以产生这种情况，比如，内存溢出，收到不知属于哪个连接的ICMP错误信息。</p>
+<p>一般地，我们DROP这个状态的任何东西。</p>
+<hr>
+<p><strong>另外还有一些描述更为简单的说明：</strong></p>
+<hr>
+<p>NEW：<br>当你在使用UDP、TCP、ICMP等协议时，发出的第一个包的状态就是“NEW”。</p>
+<hr>
+<p>ESTABLISHED:</p>
+<p>当你在使用TCP、UDP、ICMP等协议时：假设你的主机发出的第一个包成功穿越防火墙</p>
+<p>那么接下来你的主机 发出和接收到的包的状态都是“ESTABLISHED”。</p>
+<hr>
+<p>RELATED:</p>
+<p>当你执行Linux下执行traceroute（Windows下对应的命令为tracert）命令时，</p>
+<p>这个traceroute会发出一个封包，该封包的TTL（生存时间，Time To Live）为1，</p>
+<p>当这个包遇到路由器的时候它的TTL会减少1，这时TTL = 0，然后这个包会被丢弃，</p>
+<p>丢弃这个包的路由器会返回一个ICMP Type 11的封包给你，</p>
+<p>并告诉你那个发出的数据包气数已尽。</p>
+<p>而这个ICMP Type 11的链接状态就是“RELATED”。</p>
+<hr>
+<p>INVALID:</p>
+<p>状态为INVALID的包就是状态不明的包，也就是不属于前面3中状态的包，</p>
+<p>这类包一般会被视为恶意包而被丢弃。</p>
+<hr>
+<p><a href="http://www.cnblogs.com/3body/p/6140150.html" target="_blank" rel="external"><em>from:这个男人来自三体</em></a></p>
 ]]></content>
       
         <categories>
