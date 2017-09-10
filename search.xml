@@ -3,6 +3,34 @@
   
     
     <entry>
+      <title><![CDATA[老生常谈的喜欢，如梦初醒的再见。]]></title>
+      <url>/2017/09/11/change/</url>
+      <content type="html"><![CDATA[<p>你越是费劲心思的去取悦一个人，</p>
+<p>那个人就越有可能让你痛彻心扉。</p>
+<p>期待，是所有心痛的根源，</p>
+<p>陪你聊几天你就喜欢她，这是幼稚，</p>
+<p>生活会一个耳光接着一个耳光把你打醒，</p>
+<p>终有一天你会明白，</p>
+<p>人和人之间想要保持长久舒适的关系，</p>
+<p>靠的是共性和吸引。</p>
+<p>而不是压迫，捆绑，奉承，和一味的付出以及道德式的自我感动。</p>
+<p>所以，</p>
+<p>得不到回应的热情要懂得适可而止。</p>
+<blockquote>
+<p>我不指望所有人都能懂我,但我希望我在乎的人会明白….</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> 自言自语 </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[想看的书]]></title>
       <url>/2017/07/09/Books/</url>
       <content type="html"><![CDATA[<p>1.《营销管理》，(美)菲利普·科特勒</p>
@@ -269,6 +297,111 @@
     </entry>
     
     <entry>
+      <title><![CDATA[CSharp]]></title>
+      <url>/2017/07/08/CSharp/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> C/C++ C# </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[关于s/*和谐*/s的搭建]]></title>
+      <url>/2017/07/08/%E5%85%B3%E4%BA%8Ess%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
+      <content type="html"><![CDATA[<h3 id="1-下载安装Xshell"><a href="#1-下载安装Xshell" class="headerlink" title="1.下载安装Xshell"></a>1.下载安装Xshell</h3><p>安装完后连接服务器</p>
+<h3 id="2-安装脚本"><a href="#2-安装脚本" class="headerlink" title="2.安装脚本"></a>2.安装脚本</h3><blockquote>
+<p>下载脚本</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -O ss.sh http://zhangdanyang.com/file/ss.sh</div></pre></td></tr></table></figure>
+<blockquote>
+<p>执行脚本</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bash ss.sh</div></pre></td></tr></table></figure>
+<blockquote>
+<p>设置端口号并回车，直接回车是设置为1225</p>
+<p>Please enter PORT(1225 default):</p>
+<p>设置密码并回车，直接回车是设置为123456(建议改)</p>
+<p>Please enter PASSWORD(123456 default):</p>
+<p>等待一会……就完成了（初次执行约2-5min）</p>
+</blockquote>
+<h3 id="3-更新python"><a href="#3-更新python" class="headerlink" title="3.更新python"></a>3.更新python</h3><p>如果是centOS 6的版本那么python是2.6.6的,这时候安装组件pip会有警告</p>
+<p>所以需要更新,方法:</p>
+<ul>
+<li>1.百度/google</li>
+<li>2.复制已有脚本(已挂在QQ里)按提示更新.<blockquote>
+<p>注意,如更新python2.7是  sh gsetup.sh   然后 再回车  回车 4 回车;</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="4-搭建SS"><a href="#4-搭建SS" class="headerlink" title="4.搭建SS"></a>4.搭建SS</h3><ul>
+<li>安装组件<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ yum install m2crypto python-setuptools</div><div class="line">$ easy_install pip</div><div class="line">$ pip install shadowsocks</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>如果没更新python 第三个组件会警告</p>
+</blockquote>
+<ul>
+<li>安装完成后配置服务器参数</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vi  /etc/shadowsocks.json</div></pre></td></tr></table></figure>
+<p>写入如下配置(修改)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;server&quot;:&quot;0.0.0.0&quot;,</div><div class="line">    &quot;server_port&quot;:443,    #注意端口修改</div><div class="line">    &quot;local_address&quot;: &quot;127.0.0.1&quot;,</div><div class="line">    &quot;local_port&quot;:1080,</div><div class="line">    &quot;password&quot;:&quot;123456&quot;,  # 如果注意密码和之前修改的匹配</div><div class="line">    &quot;timeout&quot;:300,</div><div class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;,</div><div class="line">    &quot;fast_open&quot;: false</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="5-防火墙配置-SS-iptables-centos-6"><a href="#5-防火墙配置-SS-iptables-centos-6" class="headerlink" title="5.防火墙配置(SS iptables centos 6)"></a>5.防火墙配置(SS iptables centos 6)</h3><ul>
+<li>初始化</li>
+</ul>
+<p>首先进行一些初始化，清空所有现有的规则：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#先允许所有,不然有可能会杯具</div><div class="line">iptables -P INPUT ACCEPT</div><div class="line"></div><div class="line">iptables -F #清空所有链 ,此步骤有可能导致Xshell连接断开这可能是因为端口22的原因(如果没有上一步的话),重启服务器再链接即可.</div><div class="line"></div><div class="line">iptables -X #清空所有自定义链</div></pre></td></tr></table></figure></p>
+<ul>
+<li>定规则</li>
+</ul>
+<p>定义规则：</p>
+<p>由于我们的目的是放弃所有无关于shadowsocks的数据，也就是说默认丢弃所有数据</p>
+<p>，只接受满足条件的数据，无疑是一种很安全的做法。</p>
+<p>首先添加ssh端口：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">iptables -A INPUT -p tcp --dport 22 -j ACCEPT #22自行修改，如我设置的 8888 端口</div></pre></td></tr></table></figure></p>
+<p>添加以下六条规则：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">iptables -A INPUT -p icmp --icmp-type any -j ACCEPT</div><div class="line">iptables -A INPUT -s localhost -d localhost -j ACCEPT</div><div class="line">iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT</div><div class="line">iptables -A OUTPUT -p icmp --icmp any -j ACCEPT</div><div class="line">iptables -A OUTPUT -s localhost -d localhost -j ACCEPT</div><div class="line">iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>解释分别是:</p>
+<p>1.#允许icmp包进入</p>
+<p>2.#允许本地的数据包</p>
+<p>3.#允许已经建立和相关的数据包进入</p>
+<p>4.#允许icmp包出去</p>
+<p>5.#允许本地数据包</p>
+<p>6.#允许已经建立和相关的数据包出去</p>
+</blockquote>
+<p>需要注意的是，以上的七条基本上是 <strong>必须添加</strong> 的；下面开始添加其他必要端口：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">iptables -A OUTPUT -p udp --dport 53 -j ACCEPT</div><div class="line">iptables -A OUTPUT -p tcp -m state --state NEW --dport 80 -j ACCEPT</div><div class="line">iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT</div><div class="line">iptables -A INPUT -p tcp --dport 443 -j ACCEPT</div></pre></td></tr></table></figure>
+<blockquote>
+<p>分别解释为:</p>
+<p>1.#打开DNS需要用到的53端口</p>
+<p>2.#允许80端口tcp协议的第一个数据包</p>
+<p>3.#允许ESTABLISHED和RELATED状态的包</p>
+<p>4.#打开https需要用到的443端口</p>
+</blockquote>
+<ul>
+<li>保存配置和重启</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">service iptables save  #保存配置</div><div class="line"></div><div class="line">service iptables restart #重启iptables</div></pre></td></tr></table></figure>
+<p>请注意，重启命令如果是CentOS 6的</p>
+<h3 id="6-启用ss服务"><a href="#6-启用ss服务" class="headerlink" title="6.启用ss服务"></a>6.启用ss服务</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssserver -c /etc/shadowsocks.json</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ nohup ssserver -c /etc/shadowsocks.json &amp;   #允许后台运行</div></pre></td></tr></table></figure>
+<h3 id="7-连接"><a href="#7-连接" class="headerlink" title="7.连接"></a>7.连接</h3><p>下载Shadow Socks客户端。SS加速器客户端下载</p>
+<p>选择适合的版本，下载并解压运行。</p>
+<p>填写信息:服务器地址，端口号，密码，加密方式与代理端口默认即可</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 技术流 </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Python]]></title>
       <url>/2017/07/08/Python/</url>
       <content type="html"></content>
@@ -379,111 +512,6 @@
         <categories>
             
             <category> 技术流 </category>
-            
-        </categories>
-        
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[关于s/*和谐*/s的搭建]]></title>
-      <url>/2017/07/08/%E5%85%B3%E4%BA%8Ess%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
-      <content type="html"><![CDATA[<h3 id="1-下载安装Xshell"><a href="#1-下载安装Xshell" class="headerlink" title="1.下载安装Xshell"></a>1.下载安装Xshell</h3><p>安装完后连接服务器</p>
-<h3 id="2-安装脚本"><a href="#2-安装脚本" class="headerlink" title="2.安装脚本"></a>2.安装脚本</h3><blockquote>
-<p>下载脚本</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -O ss.sh http://zhangdanyang.com/file/ss.sh</div></pre></td></tr></table></figure>
-<blockquote>
-<p>执行脚本</p>
-</blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bash ss.sh</div></pre></td></tr></table></figure>
-<blockquote>
-<p>设置端口号并回车，直接回车是设置为1225</p>
-<p>Please enter PORT(1225 default):</p>
-<p>设置密码并回车，直接回车是设置为123456(建议改)</p>
-<p>Please enter PASSWORD(123456 default):</p>
-<p>等待一会……就完成了（初次执行约2-5min）</p>
-</blockquote>
-<h3 id="3-更新python"><a href="#3-更新python" class="headerlink" title="3.更新python"></a>3.更新python</h3><p>如果是centOS 6的版本那么python是2.6.6的,这时候安装组件pip会有警告</p>
-<p>所以需要更新,方法:</p>
-<ul>
-<li>1.百度/google</li>
-<li>2.复制已有脚本(已挂在QQ里)按提示更新.<blockquote>
-<p>注意,如更新python2.7是  sh gsetup.sh   然后 再回车  回车 4 回车;</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="4-搭建SS"><a href="#4-搭建SS" class="headerlink" title="4.搭建SS"></a>4.搭建SS</h3><ul>
-<li>安装组件<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ yum install m2crypto python-setuptools</div><div class="line">$ easy_install pip</div><div class="line">$ pip install shadowsocks</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<blockquote>
-<p>如果没更新python 第三个组件会警告</p>
-</blockquote>
-<ul>
-<li>安装完成后配置服务器参数</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ vi  /etc/shadowsocks.json</div></pre></td></tr></table></figure>
-<p>写入如下配置(修改)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;server&quot;:&quot;0.0.0.0&quot;,</div><div class="line">    &quot;server_port&quot;:443,    #注意端口修改</div><div class="line">    &quot;local_address&quot;: &quot;127.0.0.1&quot;,</div><div class="line">    &quot;local_port&quot;:1080,</div><div class="line">    &quot;password&quot;:&quot;123456&quot;,  # 如果注意密码和之前修改的匹配</div><div class="line">    &quot;timeout&quot;:300,</div><div class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;,</div><div class="line">    &quot;fast_open&quot;: false</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<h3 id="5-防火墙配置-SS-iptables-centos-6"><a href="#5-防火墙配置-SS-iptables-centos-6" class="headerlink" title="5.防火墙配置(SS iptables centos 6)"></a>5.防火墙配置(SS iptables centos 6)</h3><ul>
-<li>初始化</li>
-</ul>
-<p>首先进行一些初始化，清空所有现有的规则：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#先允许所有,不然有可能会杯具</div><div class="line">iptables -P INPUT ACCEPT</div><div class="line"></div><div class="line">iptables -F #清空所有链 ,此步骤有可能导致Xshell连接断开这可能是因为端口22的原因(如果没有上一步的话),重启服务器再链接即可.</div><div class="line"></div><div class="line">iptables -X #清空所有自定义链</div></pre></td></tr></table></figure></p>
-<ul>
-<li>定规则</li>
-</ul>
-<p>定义规则：</p>
-<p>由于我们的目的是放弃所有无关于shadowsocks的数据，也就是说默认丢弃所有数据</p>
-<p>，只接受满足条件的数据，无疑是一种很安全的做法。</p>
-<p>首先添加ssh端口：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">iptables -A INPUT -p tcp --dport 22 -j ACCEPT #22自行修改，如我设置的 8888 端口</div></pre></td></tr></table></figure></p>
-<p>添加以下六条规则：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">iptables -A INPUT -p icmp --icmp-type any -j ACCEPT</div><div class="line">iptables -A INPUT -s localhost -d localhost -j ACCEPT</div><div class="line">iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT</div><div class="line">iptables -A OUTPUT -p icmp --icmp any -j ACCEPT</div><div class="line">iptables -A OUTPUT -s localhost -d localhost -j ACCEPT</div><div class="line">iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT</div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>解释分别是:</p>
-<p>1.#允许icmp包进入</p>
-<p>2.#允许本地的数据包</p>
-<p>3.#允许已经建立和相关的数据包进入</p>
-<p>4.#允许icmp包出去</p>
-<p>5.#允许本地数据包</p>
-<p>6.#允许已经建立和相关的数据包出去</p>
-</blockquote>
-<p>需要注意的是，以上的七条基本上是 <strong>必须添加</strong> 的；下面开始添加其他必要端口：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">iptables -A OUTPUT -p udp --dport 53 -j ACCEPT</div><div class="line">iptables -A OUTPUT -p tcp -m state --state NEW --dport 80 -j ACCEPT</div><div class="line">iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT</div><div class="line">iptables -A INPUT -p tcp --dport 443 -j ACCEPT</div></pre></td></tr></table></figure>
-<blockquote>
-<p>分别解释为:</p>
-<p>1.#打开DNS需要用到的53端口</p>
-<p>2.#允许80端口tcp协议的第一个数据包</p>
-<p>3.#允许ESTABLISHED和RELATED状态的包</p>
-<p>4.#打开https需要用到的443端口</p>
-</blockquote>
-<ul>
-<li>保存配置和重启</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">service iptables save  #保存配置</div><div class="line"></div><div class="line">service iptables restart #重启iptables</div></pre></td></tr></table></figure>
-<p>请注意，重启命令如果是CentOS 6的</p>
-<h3 id="6-启用ss服务"><a href="#6-启用ss服务" class="headerlink" title="6.启用ss服务"></a>6.启用ss服务</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ ssserver -c /etc/shadowsocks.json</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ nohup ssserver -c /etc/shadowsocks.json &amp;   #允许后台运行</div></pre></td></tr></table></figure>
-<h3 id="7-连接"><a href="#7-连接" class="headerlink" title="7.连接"></a>7.连接</h3><p>下载Shadow Socks客户端。SS加速器客户端下载</p>
-<p>选择适合的版本，下载并解压运行。</p>
-<p>填写信息:服务器地址，端口号，密码，加密方式与代理端口默认即可</p>
-]]></content>
-      
-        <categories>
-            
-            <category> 技术流 </category>
-            
-        </categories>
-        
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[CSharp]]></title>
-      <url>/2017/07/08/CSharp/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> C/C++ C# </category>
             
         </categories>
         
