@@ -3,34 +3,6 @@
   
     
     <entry>
-      <title><![CDATA[老生常谈的喜欢，如梦初醒的再见。]]></title>
-      <url>/2017/09/11/change/</url>
-      <content type="html"><![CDATA[<p>你越是费劲心思的去取悦一个人，</p>
-<p>那个人就越有可能让你痛彻心扉。</p>
-<p>期待，是所有心痛的根源，</p>
-<p>陪你聊几天你就喜欢她，这是幼稚，</p>
-<p>生活会一个耳光接着一个耳光把你打醒，</p>
-<p>终有一天你会明白，</p>
-<p>人和人之间想要保持长久舒适的关系，</p>
-<p>靠的是共性和吸引。</p>
-<p>而不是压迫，捆绑，奉承，和一味的付出以及道德式的自我感动。</p>
-<p>所以，</p>
-<p>得不到回应的热情要懂得适可而止。</p>
-<blockquote>
-<p>我不指望所有人都能懂我,但我希望我在乎的人会明白….</p>
-</blockquote>
-]]></content>
-      
-        <categories>
-            
-            <category> 自言自语 </category>
-            
-        </categories>
-        
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[想看的书]]></title>
       <url>/2017/07/09/Books/</url>
       <content type="html"><![CDATA[<p>1.《营销管理》，(美)菲利普·科特勒</p>
@@ -297,20 +269,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[CSharp]]></title>
-      <url>/2017/07/08/CSharp/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> C/C++ C# </category>
-            
-        </categories>
-        
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[关于s/*和谐*/s的搭建]]></title>
       <url>/2017/07/08/%E5%85%B3%E4%BA%8Ess%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
       <content type="html"><![CDATA[<h3 id="1-下载安装Xshell"><a href="#1-下载安装Xshell" class="headerlink" title="1.下载安装Xshell"></a>1.下载安装Xshell</h3><p>安装完后连接服务器</p>
@@ -395,20 +353,6 @@
         <categories>
             
             <category> 技术流 </category>
-            
-        </categories>
-        
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Python]]></title>
-      <url>/2017/07/08/Python/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> Python </category>
             
         </categories>
         
@@ -512,6 +456,34 @@
         <categories>
             
             <category> 技术流 </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[CSharp]]></title>
+      <url>/2017/07/08/CSharp/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> C/C++ C# </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Python]]></title>
+      <url>/2017/07/08/Python/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> Python </category>
             
         </categories>
         
