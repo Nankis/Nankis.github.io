@@ -4,122 +4,15 @@
     
     <entry>
       <title><![CDATA[关于科学上网及自主搭建梯子]]></title>
-      <url>/2017/10/15/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E6%9F%A5%E8%B5%84%E6%96%99/</url>
-      <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h3><p>  假期花了点时间折腾了下,成功用VPS搭建了SSR(<a href="http://www.nanki.vip/" target="_blank" rel="external"><font color="gren">成功实例</font></a>).一开始没有找到很好的教</p>
-<p>  程,自己来来回来折腾,</p>
-<p>  重装了很多次服务器.后来找到了一键脚本之类的.还有魔改版等…此教程(其实没啥技术含量,</p>
-<p>  或者都不算教程,其中大多都是搬照别人的)仅提供参考.</p>
-<p>这个教程直接利用了别人写好的脚本和网站,所以只要安装正确,</p>
-<p>配置正确的话就没问题的,这样会为第一次动手做这个的人少走很多弯路.</p>
-<h3 id="为什么需要科学上网"><a href="#为什么需要科学上网" class="headerlink" title="为什么需要科学上网?"></a>为什么需要科学上网?</h3><ul>
-<li>great firewall, 中国特有的。就是国家对网络的封锁。想要看看外面的世界，就得翻墙。既然想学点东西，就不能被网络束缚住。国内的网络环境，并不利于我们成长。..作为一个程序员,翻墙是必修课之一.</li>
-<li><p>这里有个人写的一篇 <a href="http://stormzhang.com/2016/08/12/you-must-use-google/" target="_blank" rel="external"><font color="red">百度黑</font></a>参考….</p>
-<h3 id="VPS"><a href="#VPS" class="headerlink" title="VPS"></a>VPS</h3><h4 id="VPS地点"><a href="#VPS地点" class="headerlink" title="VPS地点"></a>VPS地点</h4></li>
-<li>美国的VPS联通/电信访问延迟基本相当。<br> 一般选择靠近美国西海岸节点旧金山、洛杉矶、纽约等地点。<br>电信限速很厉害，所以一般电信网需要开混淆配合FinaSppeed等加速。<br>新加坡节点，在靠近南方地区，可以ping在100以内稳定！youtube 4k不卡 但在偏北一些地区ping不稳定。</li>
-</ul>
-<ul>
-<li>香港VPS，这个比较特殊，香港的VPS ping值可以低到20几，但是香港本身的国际出口就小，VPS价格也偏高，另外香港毕竟也在政府的直接管辖内，隐私方面风险比其他地区节点要大一些。建议土豪级别的游戏玩家使用。</li>
-</ul>
-<h4 id="VPS提供商"><a href="#VPS提供商" class="headerlink" title="VPS提供商"></a>VPS提供商</h4><p>目前市面上各种VPS供应商很多..在这里我不说太多..可自行查询,这里我选择的是Vultr的VPS.因为vultr免费快照很方便.,5$/月的费用也不高.</p>
-<p><a href="https://www.vultr.com/?ref=7189114" target="_blank" rel="external">Vultr注册链接</a></p>
-<blockquote>
-<p>(题外话)通过这个推荐链接注册可以免费获得10美元,同时我也能获得一些奖励</p>
-</blockquote>
-<p>注意,购买</p>
-<h4 id="服务器选择"><a href="#服务器选择" class="headerlink" title="服务器选择"></a>服务器选择</h4><ul>
-<li><p>选择东京或者美国西海岸的服务器,速度相对比较快.<br><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS%E9%80%89%E6%8B%A91.png" alt="vps1"></p>
-<h4 id="操作系统选择"><a href="#操作系统选择" class="headerlink" title="操作系统选择"></a>操作系统选择</h4><p><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS%E9%80%89%E6%8B%A92.png" alt="VPS2"></p>
-<ul>
-<li>注意,这里我选择CentOS6, 因为CentOS7去掉了iptables,而加了防火墙.处理起来会相对麻烦些.详情后面会讲到</li>
-</ul>
-</li>
-</ul>
-<h4 id="硬件选择"><a href="#硬件选择" class="headerlink" title="硬件选择"></a>硬件选择</h4><p><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS%E9%80%89%E6%8B%A93.png" alt="VPS3"></p>
-<ul>
-<li>此处打上勾,教育网用户/能分到IPV6地址的用户比较好用</li>
-</ul>
-<h4 id="关于购买"><a href="#关于购买" class="headerlink" title="关于购买"></a>关于购买</h4><ul>
-<li>Vultr购买方式有<ul>
-<li>paypal</li>
-<li>visa信用卡<blockquote>
-<p>这是我知道的方式…可能还有其他方式没试过</p>
-</blockquote>
-</li>
-</ul>
-</li>
-</ul>
-<p>这里我推荐使用paypal支付,先去paypal注册一个帐号,然后绑定一张银行卡即可.</p>
-<p> <a href="https://www.paypal.com/c2/home" target="_blank" rel="external"><font color="red">Paypal注册地址</font></a></p>
-<p><strong>注意:</strong> <font color="red">购买Vultr的VPS时,请别挂代理,否则可能会因为疑是欺诈而不能成功支付</font></p>
-<h3 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h3><ul>
-<li><p>现在你已经成功购买了一个5$/月的CentoS6 VPS.<br>  <img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS4.png" alt="VPS4"></p>
-</li>
-<li><p>点击图标或服务器名字进入详情</p>
-</li>
-</ul>
-<p><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTvps5.png" alt="VPS5"></p>
-<p>以上是VPS的信息<br>待会儿需要填写.地址和密码都可以直接复制</p>
-<h4 id="下载SSH工具"><a href="#下载SSH工具" class="headerlink" title="下载SSH工具"></a>下载SSH工具</h4><p>这里我推荐用 <strong>Xshell</strong> ,下载方式:百度第一个</p>
-<ul>
-<li>安装完毕后打开应该是这样子的.<br>*<br><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS6.jpg" alt="VPS6"></li>
-</ul>
-<p>按照图示新建,会出现如图对话框,把刚才的ip地址复制到主机处.<br>可以在名称那里备注下:Vultr</p>
-<ul>
-<li><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS7.png" alt="VPS7"></li>
-</ul>
-<p>填写完毕后点击确定,会弹出一个对话框,只要点连接即,接着,会提示保存密</p>
-<p>码之类的.选择接受并保存(貌似是中间的选项)</p>
-<p>这时候只要出现左上角的有个绿点即表示连接服务器成功.</p>
-<h4 id="关于安装"><a href="#关于安装" class="headerlink" title="关于安装"></a>关于安装</h4><ul>
-<li><p>目前有几种安装方式,这里我写两种,第一种是最简单的一键安装脚本,安装脚本是来源于 <strong>“逗逼根据地”</strong>(末尾会附上链接)  这是单用户版,非商用</p>
-</li>
-<li><p>第二种是  宝塔版+前端魔改版V3的   可商用</p>
-</li>
-</ul>
-<h4 id="一键安装脚本教程"><a href="#一键安装脚本教程" class="headerlink" title="一键安装脚本教程"></a>一键安装脚本教程</h4><p><strong>脚本特点:</strong></p>
-<ul>
-<li><p>支持 限制 用户速度</p>
-</li>
-<li><p>支持 限制 用户设备数</p>
-</li>
-<li><p>支持 限制 用户总流量</p>
-</li>
-<li><p>支持 定时 流量清零</p>
-</li>
-<li><p>支持 显示 当前连接IP</p>
-</li>
-<li><p>支持 显示 SS/SSR连接+二维码</p>
-</li>
-<li><p>支持 一键安装 BBR</p>
-</li>
-<li><p>支持 一键安装 锐速</p>
-</li>
-<li><p>支持 一键安装 LotServer</p>
-</li>
-<li><p>支持 一键封禁 垃圾邮件(SMAP)/BT/P</p>
-</li>
-</ul>
-<p>简单的来说，如果你什么都不懂，那么你直接一路回车就可以了！</p>
-<p>本脚本需要Linux root账户权限才能正常安装运行，所以如果不是 root账</p>
-<p>号，请先切换为root，如果是 root账号，那么请跳过！</p>
-<h5 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h5><figcaption>su</code></p></figcaption><pre class="line-numbers language-sudo"><code class="language-sudo"><p>输入上面代码回车后会提示你输入当前用户的密码，输入并回车后，没有报错就继续下面的步骤安装ShadowsocksR。</p>
-<p><code>wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh</code></p>
-<p>下载运行后会提示你输入数字来选择要做什么。</p>
-<p>输入 1 ，就会开始安装ShadowsocksR服务端，并且会提示你输入Shadowsocks的 端口/密码/加密方式/ 协议/混淆（混淆和协议是通过输入数字选择的） 等参数来添加第一个用户。</p>
-<blockquote>
-<p>注意:用户名不支持中文,如果输入中文会一直保存下去!</p>
-</blockquote>
-<p>因为该脚本是纯小白式的安装方法,所以也没啥可说的.最后安装成功后会显示如图效果:</p>
-<p><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS8.png" alt="VPS8"></p>
-<p>如图成功后,可下载小飞机测试了…若是还有问题则看最后附上的原教程.</p>
-<h3 id="宝塔-魔改版V3"><a href="#宝塔-魔改版V3" class="headerlink" title="宝塔+魔改版V3"></a>宝塔+魔改版V3</h3><p>在搭建这个之前,如果你需要用来商用,则需要自己去购买一个域名,</p>
+      <url>/2017/10/15/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E6%90%AD%E6%A2%AF%E5%AD%90(%E4%BA%8C)/</url>
+      <content type="html"><![CDATA[<h3 id="宝塔-魔改版V3"><a href="#宝塔-魔改版V3" class="headerlink" title="宝塔+魔改版V3"></a>宝塔+魔改版V3</h3><p>在搭建这个之前,如果你需要用来商用,则需要自己去购买一个域名,</p>
 <p>当然也有免费域名,关于免费域名获取自行解决.  不过我自己用的</p>
 <p>是godday的域名貌似40RMB一年…</p>
 <h5 id="安装宝塔"><a href="#安装宝塔" class="headerlink" title="安装宝塔"></a>安装宝塔</h5><p>关于宝塔面板: 宝塔面板是Linux可直接操作面板,有些操作可以省去再用命令行操作.对新手十分友好.详情百度</p>
 <ul>
 <li>安装过程大概需要5分钟左右</li>
 </ul>
-<p><code>yum install -y wget && wget -O install.sh http://download.bt.cn/install/install.sh && sh install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><code>yum install -y wget &amp;&amp; wget -O install.sh http://download.bt.cn/install/install.sh &amp;&amp; sh install.sh</code></p>
 <blockquote>
 <p>这里有点需要提下:SSR的python需要需要2.7的而CentoS6自带的是2.6的所以需要升级,而安装宝塔自带将python升级到2.7.所以免去了手动升级python的步骤</p>
 </blockquote>
@@ -222,7 +115,21 @@
 <blockquote>
 <p>第一个需要梯子才能看, 第二个可能是大佬自己关了..</p>
 </blockquote>
-<h3 id="关于SSR及其他补充了解"><a href="#关于SSR及其他补充了解" class="headerlink" title="关于SSR及其他补充了解"></a>关于SSR及其他补充了解</h3><h4 id="Shadowsocks作者是谁？是否还在更新？"><a href="#Shadowsocks作者是谁？是否还在更新？" class="headerlink" title="Shadowsocks作者是谁？是否还在更新？"></a>Shadowsocks作者是谁？是否还在更新？</h4><p>Shadowsocks是由若干人因为兴趣而制作的一个项目，主要开发者和领导者是 @clowwindy ，</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 技术流 </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[关于科学上网及自主搭建梯子]]></title>
+      <url>/2017/10/15/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E6%90%AD%E6%A2%AF%E5%AD%90(%E4%B8%89)/</url>
+      <content type="html"><![CDATA[<h3 id="关于SSR及其他补充了解"><a href="#关于SSR及其他补充了解" class="headerlink" title="关于SSR及其他补充了解"></a>关于SSR及其他补充了解</h3><h4 id="Shadowsocks作者是谁？是否还在更新？"><a href="#Shadowsocks作者是谁？是否还在更新？" class="headerlink" title="Shadowsocks作者是谁？是否还在更新？"></a>Shadowsocks作者是谁？是否还在更新？</h4><p>Shadowsocks是由若干人因为兴趣而制作的一个项目，主要开发者和领导者是 @clowwindy ，</p>
 <p>但是在2015年下半年 被“相关部门”约谈喝茶，于是被迫删除Github的源码及相关文档。</p>
 <p><img src="http://ossdpnhoy.bkt.clouddn.com/vvv1.png" alt="VVV3"></p>
 <p>但Shadowsocks属于开源项目，所以删除前已经有人备份，同时由另一个志愿者跟进维护原版 Shadowsocks</p>
@@ -267,6 +174,109 @@
 <li>如何防范中国网络“大炮”</li>
 <li>科学上网的注意事项及相关法律（必读）</li>
 </ul>
+]]></content>
+      
+        <categories>
+            
+            <category> 技术流 </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[关于科学上网及自主搭建梯子]]></title>
+      <url>/2017/10/15/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E6%90%AD%E6%A2%AF%E5%AD%90(%E4%B8%80)/</url>
+      <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h3><p>  假期花了点时间折腾了下,成功用VPS搭建了SSR(<a href="http://www.nanki.vip/" target="_blank" rel="external"><font color="gren">成功实例</font></a>).一开始没有找到很好的教</p>
+<p>  程,自己来来回来折腾,</p>
+<p>  重装了很多次服务器.后来找到了一键脚本之类的.还有魔改版等…此教程(其实没啥技术含量,</p>
+<p>  或者都不算教程,其中大多都是搬照别人的)仅提供参考.</p>
+<p>这个教程直接利用了别人写好的脚本和网站,所以只要安装正确,</p>
+<p>配置正确的话就没问题的,这样会为第一次动手做这个的人少走很多弯路.</p>
+<h3 id="为什么需要科学上网"><a href="#为什么需要科学上网" class="headerlink" title="为什么需要科学上网?"></a>为什么需要科学上网?</h3><ul>
+<li>great firewall, 中国特有的。就是国家对网络的封锁。想要看看外面的世界，就得翻墙。既然想学点东西，就不能被网络束缚住。国内的网络环境，并不利于我们成长。..作为一个程序员,翻墙是必修课之一.</li>
+<li><p>这里有个人写的一篇 <a href="http://stormzhang.com/2016/08/12/you-must-use-google/" target="_blank" rel="external"><font color="red">百度黑</font></a>参考….</p>
+<h3 id="VPS"><a href="#VPS" class="headerlink" title="VPS"></a>VPS</h3><h4 id="VPS地点"><a href="#VPS地点" class="headerlink" title="VPS地点"></a>VPS地点</h4></li>
+<li>美国的VPS联通/电信访问延迟基本相当。<br> 一般选择靠近美国西海岸节点旧金山、洛杉矶、纽约等地点。<br>电信限速很厉害，所以一般电信网需要开混淆配合FinaSppeed等加速。<br>新加坡节点，在靠近南方地区，可以ping在100以内稳定！youtube 4k不卡 但在偏北一些地区ping不稳定。</li>
+</ul>
+<ul>
+<li>香港VPS，这个比较特殊，香港的VPS ping值可以低到20几，但是香港本身的国际出口就小，VPS价格也偏高，另外香港毕竟也在政府的直接管辖内，隐私方面风险比其他地区节点要大一些。建议土豪级别的游戏玩家使用。</li>
+</ul>
+<h4 id="VPS提供商"><a href="#VPS提供商" class="headerlink" title="VPS提供商"></a>VPS提供商</h4><p>目前市面上各种VPS供应商很多..在这里我不说太多..可自行查询,这里我选择的是Vultr的VPS.因为vultr免费快照很方便.,5$/月的费用也不高.</p>
+<p><a href="https://www.vultr.com/?ref=7189114" target="_blank" rel="external">Vultr注册链接</a></p>
+<blockquote>
+<p>(题外话)通过这个推荐链接注册可以免费获得10美元,同时我也能获得一些奖励</p>
+</blockquote>
+<p>注意,购买</p>
+<h4 id="服务器选择"><a href="#服务器选择" class="headerlink" title="服务器选择"></a>服务器选择</h4><ul>
+<li><p>选择东京或者美国西海岸的服务器,速度相对比较快.<br><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS%E9%80%89%E6%8B%A91.png" alt="vps1"></p>
+<h4 id="操作系统选择"><a href="#操作系统选择" class="headerlink" title="操作系统选择"></a>操作系统选择</h4><p><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS%E9%80%89%E6%8B%A92.png" alt="VPS2"></p>
+<ul>
+<li>注意,这里我选择CentOS6, 因为CentOS7去掉了iptables,而加了防火墙.处理起来会相对麻烦些.详情后面会讲到</li>
+</ul>
+</li>
+</ul>
+<h4 id="硬件选择"><a href="#硬件选择" class="headerlink" title="硬件选择"></a>硬件选择</h4><p><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS%E9%80%89%E6%8B%A93.png" alt="VPS3"></p>
+<ul>
+<li>此处打上勾,教育网用户/能分到IPV6地址的用户比较好用</li>
+</ul>
+<h4 id="关于购买"><a href="#关于购买" class="headerlink" title="关于购买"></a>关于购买</h4><ul>
+<li>Vultr购买方式有<ul>
+<li>paypal</li>
+<li>visa信用卡<blockquote>
+<p>这是我知道的方式…可能还有其他方式没试过</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<p>这里我推荐使用paypal支付,先去paypal注册一个帐号,然后绑定一张银行卡即可.</p>
+<p> <a href="https://www.paypal.com/c2/home" target="_blank" rel="external"><font color="red">Paypal注册地址</font></a></p>
+<p><strong>注意:</strong> <font color="red">购买Vultr的VPS时,请别挂代理,否则可能会因为疑是欺诈而不能成功支付</font></p>
+<h3 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h3><ul>
+<li><p>现在你已经成功购买了一个5$/月的CentoS6 VPS.<br>  <img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS4.png" alt="VPS4"></p>
+</li>
+<li><p>点击图标或服务器名字进入详情</p>
+</li>
+</ul>
+<p><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTvps5.png" alt="VPS5"></p>
+<p>以上是VPS的信息<br>待会儿需要填写.地址和密码都可以直接复制</p>
+<h4 id="下载SSH工具"><a href="#下载SSH工具" class="headerlink" title="下载SSH工具"></a>下载SSH工具</h4><p>这里我推荐用 <strong>Xshell</strong> ,下载方式:百度第一个</p>
+<ul>
+<li>安装完毕后打开应该是这样子的.<br>*<br><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS6.jpg" alt="VPS6"></li>
+</ul>
+<p>按照图示新建,会出现如图对话框,把刚才的ip地址复制到主机处.<br>可以在名称那里备注下:Vultr</p>
+<ul>
+<li><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS7.png" alt="VPS7"></li>
+</ul>
+<p>填写完毕后点击确定,会弹出一个对话框,只要点连接即,接着,会提示保存密</p>
+<p>码之类的.选择接受并保存(貌似是中间的选项)</p>
+<p>这时候只要出现左上角的有个绿点即表示连接服务器成功.</p>
+<h4 id="关于安装"><a href="#关于安装" class="headerlink" title="关于安装"></a>关于安装</h4><ul>
+<li><p>目前有几种安装方式,这里我写两种,第一种是最简单的一键安装脚本,安装脚本是来源于 <strong>“逗逼根据地”</strong>(末尾会附上链接)  这是单用户版,非商用</p>
+</li>
+<li><p>第二种是  宝塔版+前端魔改版V3的   可商用</p>
+</li>
+</ul>
+<h4 id="一键安装脚本教程"><a href="#一键安装脚本教程" class="headerlink" title="一键安装脚本教程"></a>一键安装脚本教程</h4><p><strong>脚本特点:</strong></p>
+<p> 支持 显示 SS/SSR连接+二维码</p>
+<p>支持 一键安装 BBR</p>
+<p> 支持 一键安装 锐速<br>…..</p>
+<p>简单的来说，如果你什么都不懂，那么你直接一路回车就可以了！</p>
+<p>本脚本需要Linux root账户权限才能正常安装运行，所以如果不是 root账</p>
+<p>号，请先切换为root，如果是 root账号，那么请跳过！</p>
+<h5 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo su</div></pre></td></tr></table></figure>
+<p>输入上面代码回车后会提示你输入当前用户的密码，输入并回车后，没有报错就继续下面的步骤安装ShadowsocksR。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh &amp;&amp; chmod +x ssrmu.sh &amp;&amp; bash ssrmu.sh</div></pre></td></tr></table></figure>
+<p>下载运行后会提示你输入数字来选择要做什么。</p>
+<p>输入 1 ，就会开始安装ShadowsocksR服务端，并且会提示你输入Shadowsocks的 端口/密码/加密方式/ 协议/混淆（混淆和协议是通过输入数字选择的） 等参数来添加第一个用户。</p>
+<blockquote>
+<p>注意:用户名不支持中文,如果输入中文会一直保存下去!</p>
+</blockquote>
+<p>因为该脚本是纯小白式的安装方法,所以也没啥可说的.最后安装成功后会显示如图效果:</p>
+<p><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS8.png" alt="VPS8"></p>
+<p>如图成功后,可下载小飞机测试了…若是还有问题则看最后附上的原教程.</p>
 ]]></content>
       
         <categories>
@@ -545,13 +555,13 @@
     </entry>
     
     <entry>
-      <title><![CDATA[CSharp]]></title>
-      <url>/2017/07/08/CSharp/</url>
+      <title><![CDATA[Python]]></title>
+      <url>/2017/07/08/Python/</url>
       <content type="html"></content>
       
         <categories>
             
-            <category> C/C++ C# </category>
+            <category> Python </category>
             
         </categories>
         
@@ -662,20 +672,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Python]]></title>
-      <url>/2017/07/08/Python/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> Python </category>
-            
-        </categories>
-        
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[关于s/*和谐*/s的搭建]]></title>
       <url>/2017/07/08/%E5%85%B3%E4%BA%8Ess%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
       <content type="html"><![CDATA[<h3 id="1-下载安装Xshell"><a href="#1-下载安装Xshell" class="headerlink" title="1.下载安装Xshell"></a>1.下载安装Xshell</h3><p>安装完后连接服务器</p>
@@ -760,6 +756,20 @@
         <categories>
             
             <category> 技术流 </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[CSharp]]></title>
+      <url>/2017/07/08/CSharp/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> C/C++ C# </category>
             
         </categories>
         
@@ -1034,6 +1044,274 @@
     
   
   
+    
+    <entry>
+      <title><![CDATA[关于科学上网及自主搭建梯子]]></title>
+      <url>/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E6%90%AD%E6%A2%AF%E5%AD%90%E4%B8%8B.html</url>
+      <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言:"></a>前言:</h3><p>  假期花了点时间折腾了下,成功用VPS搭建了SSR(<a href="http://www.nanki.vip/" target="_blank" rel="external"><font color="gren">成功实例</font></a>).一开始没有找到很好的教</p>
+<p>  程,自己来来回来折腾,</p>
+<p>  重装了很多次服务器.后来找到了一键脚本之类的.还有魔改版等…此教程(其实没啥技术含量,</p>
+<p>  或者都不算教程,其中大多都是搬照别人的)仅提供参考.</p>
+<p>这个教程直接利用了别人写好的脚本和网站,所以只要安装正确,</p>
+<p>配置正确的话就没问题的,这样会为第一次动手做这个的人少走很多弯路.</p>
+<h3 id="为什么需要科学上网"><a href="#为什么需要科学上网" class="headerlink" title="为什么需要科学上网?"></a>为什么需要科学上网?</h3><ul>
+<li>great firewall, 中国特有的。就是国家对网络的封锁。想要看看外面的世界，就得翻墙。既然想学点东西，就不能被网络束缚住。国内的网络环境，并不利于我们成长。..作为一个程序员,翻墙是必修课之一.</li>
+<li><p>这里有个人写的一篇 <a href="http://stormzhang.com/2016/08/12/you-must-use-google/" target="_blank" rel="external"><font color="red">百度黑</font></a>参考….</p>
+<h3 id="VPS"><a href="#VPS" class="headerlink" title="VPS"></a>VPS</h3><h4 id="VPS地点"><a href="#VPS地点" class="headerlink" title="VPS地点"></a>VPS地点</h4></li>
+<li>美国的VPS联通/电信访问延迟基本相当。<br> 一般选择靠近美国西海岸节点旧金山、洛杉矶、纽约等地点。<br>电信限速很厉害，所以一般电信网需要开混淆配合FinaSppeed等加速。<br>新加坡节点，在靠近南方地区，可以ping在100以内稳定！youtube 4k不卡 但在偏北一些地区ping不稳定。</li>
+</ul>
+<ul>
+<li>香港VPS，这个比较特殊，香港的VPS ping值可以低到20几，但是香港本身的国际出口就小，VPS价格也偏高，另外香港毕竟也在政府的直接管辖内，隐私方面风险比其他地区节点要大一些。建议土豪级别的游戏玩家使用。</li>
+</ul>
+<h4 id="VPS提供商"><a href="#VPS提供商" class="headerlink" title="VPS提供商"></a>VPS提供商</h4><p>目前市面上各种VPS供应商很多..在这里我不说太多..可自行查询,这里我选择的是Vultr的VPS.因为vultr免费快照很方便.,5$/月的费用也不高.</p>
+<p><a href="https://www.vultr.com/?ref=7189114" target="_blank" rel="external">Vultr注册链接</a></p>
+<blockquote>
+<p>(题外话)通过这个推荐链接注册可以免费获得10美元,同时我也能获得一些奖励</p>
+</blockquote>
+<p>注意,购买</p>
+<h4 id="服务器选择"><a href="#服务器选择" class="headerlink" title="服务器选择"></a>服务器选择</h4><ul>
+<li><p>选择东京或者美国西海岸的服务器,速度相对比较快.<br><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS%E9%80%89%E6%8B%A91.png" alt="vps1"></p>
+<h4 id="操作系统选择"><a href="#操作系统选择" class="headerlink" title="操作系统选择"></a>操作系统选择</h4><p><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS%E9%80%89%E6%8B%A92.png" alt="VPS2"></p>
+<ul>
+<li>注意,这里我选择CentOS6, 因为CentOS7去掉了iptables,而加了防火墙.处理起来会相对麻烦些.详情后面会讲到</li>
+</ul>
+</li>
+</ul>
+<h4 id="硬件选择"><a href="#硬件选择" class="headerlink" title="硬件选择"></a>硬件选择</h4><p><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS%E9%80%89%E6%8B%A93.png" alt="VPS3"></p>
+<ul>
+<li>此处打上勾,教育网用户/能分到IPV6地址的用户比较好用</li>
+</ul>
+<h4 id="关于购买"><a href="#关于购买" class="headerlink" title="关于购买"></a>关于购买</h4><ul>
+<li>Vultr购买方式有<ul>
+<li>paypal</li>
+<li>visa信用卡<blockquote>
+<p>这是我知道的方式…可能还有其他方式没试过</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<p>这里我推荐使用paypal支付,先去paypal注册一个帐号,然后绑定一张银行卡即可.</p>
+<p> <a href="https://www.paypal.com/c2/home" target="_blank" rel="external"><font color="red">Paypal注册地址</font></a></p>
+<p><strong>注意:</strong> <font color="red">购买Vultr的VPS时,请别挂代理,否则可能会因为疑是欺诈而不能成功支付</font></p>
+<h3 id="开始部署"><a href="#开始部署" class="headerlink" title="开始部署"></a>开始部署</h3><ul>
+<li><p>现在你已经成功购买了一个5$/月的CentoS6 VPS.<br>  <img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS4.png" alt="VPS4"></p>
+</li>
+<li><p>点击图标或服务器名字进入详情</p>
+</li>
+</ul>
+<p><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTvps5.png" alt="VPS5"></p>
+<p>以上是VPS的信息<br>待会儿需要填写.地址和密码都可以直接复制</p>
+<h4 id="下载SSH工具"><a href="#下载SSH工具" class="headerlink" title="下载SSH工具"></a>下载SSH工具</h4><p>这里我推荐用 <strong>Xshell</strong> ,下载方式:百度第一个</p>
+<ul>
+<li>安装完毕后打开应该是这样子的.<br>*<br><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS6.jpg" alt="VPS6"></li>
+</ul>
+<p>按照图示新建,会出现如图对话框,把刚才的ip地址复制到主机处.<br>可以在名称那里备注下:Vultr</p>
+<ul>
+<li><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS7.png" alt="VPS7"></li>
+</ul>
+<p>填写完毕后点击确定,会弹出一个对话框,只要点连接即,接着,会提示保存密</p>
+<p>码之类的.选择接受并保存(貌似是中间的选项)</p>
+<p>这时候只要出现左上角的有个绿点即表示连接服务器成功.</p>
+<h4 id="关于安装"><a href="#关于安装" class="headerlink" title="关于安装"></a>关于安装</h4><ul>
+<li><p>目前有几种安装方式,这里我写两种,第一种是最简单的一键安装脚本,安装脚本是来源于 <strong>“逗逼根据地”</strong>(末尾会附上链接)  这是单用户版,非商用</p>
+</li>
+<li><p>第二种是  宝塔版+前端魔改版V3的   可商用</p>
+</li>
+</ul>
+<h4 id="一键安装脚本教程"><a href="#一键安装脚本教程" class="headerlink" title="一键安装脚本教程"></a>一键安装脚本教程</h4><p><strong>脚本特点:</strong></p>
+<ul>
+<li><p>支持 限制 用户速度</p>
+</li>
+<li><p>支持 限制 用户设备数</p>
+</li>
+<li><p>支持 限制 用户总流量</p>
+</li>
+<li><p>支持 定时 流量清零</p>
+</li>
+<li><p>支持 显示 当前连接IP</p>
+</li>
+<li><p>支持 显示 SS/SSR连接+二维码</p>
+</li>
+<li><p>支持 一键安装 BBR</p>
+</li>
+<li><p>支持 一键安装 锐速</p>
+</li>
+<li><p>支持 一键安装 LotServer</p>
+</li>
+<li><p>支持 一键封禁 垃圾邮件(SMAP)/BT/P</p>
+</li>
+</ul>
+<p>简单的来说，如果你什么都不懂，那么你直接一路回车就可以了！</p>
+<p>本脚本需要Linux root账户权限才能正常安装运行，所以如果不是 root账</p>
+<p>号，请先切换为root，如果是 root账号，那么请跳过！</p>
+<h5 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h5><figcaption>su</code></p></figcaption><pre class="line-numbers language-sudo"><code class="language-sudo"><p>输入上面代码回车后会提示你输入当前用户的密码，输入并回车后，没有报错就继续下面的步骤安装ShadowsocksR。</p>
+<p><code>wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh</code></p>
+<p>下载运行后会提示你输入数字来选择要做什么。</p>
+<p>输入 1 ，就会开始安装ShadowsocksR服务端，并且会提示你输入Shadowsocks的 端口/密码/加密方式/ 协议/混淆（混淆和协议是通过输入数字选择的） 等参数来添加第一个用户。</p>
+<blockquote>
+<p>注意:用户名不支持中文,如果输入中文会一直保存下去!</p>
+</blockquote>
+<p>因为该脚本是纯小白式的安装方法,所以也没啥可说的.最后安装成功后会显示如图效果:</p>
+<p><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTVPS8.png" alt="VPS8"></p>
+<p>如图成功后,可下载小飞机测试了…若是还有问题则看最后附上的原教程.</p>
+<h3 id="宝塔-魔改版V3"><a href="#宝塔-魔改版V3" class="headerlink" title="宝塔+魔改版V3"></a>宝塔+魔改版V3</h3><p>在搭建这个之前,如果你需要用来商用,则需要自己去购买一个域名,</p>
+<p>当然也有免费域名,关于免费域名获取自行解决.  不过我自己用的</p>
+<p>是godday的域名貌似40RMB一年…</p>
+<h5 id="安装宝塔"><a href="#安装宝塔" class="headerlink" title="安装宝塔"></a>安装宝塔</h5><p>关于宝塔面板: 宝塔面板是Linux可直接操作面板,有些操作可以省去再用命令行操作.对新手十分友好.详情百度</p>
+<ul>
+<li>安装过程大概需要5分钟左右</li>
+</ul>
+<p><code>yum install -y wget && wget -O install.sh http://download.bt.cn/install/install.sh && sh install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<blockquote>
+<p>这里有点需要提下:SSR的python需要需要2.7的而CentoS6自带的是2.6的所以需要升级,而安装宝塔自带将python升级到2.7.所以免去了手动升级python的步骤</p>
+</blockquote>
+<h5 id="宝塔安装LMNP"><a href="#宝塔安装LMNP" class="headerlink" title="宝塔安装LMNP"></a>宝塔安装LMNP</h5><p>宝塔安装完毕后会显示出登录的信息</p>
+<p>默认应该是   VPS的IP地址:8888<br>假设我的IP地址为115.159.56.153 那么登录端口为</p>
+<p><strong>115.159.56.153:8888</strong>  这种信息会在安装完毕后提示</p>
+<p>根据安装完毕后得出的信息,复制到地址栏,打开后会有如下窗口:<br><img src="http://ossdpnhoy.bkt.clouddn.com/V1.png" alt="V1"></p>
+<p>这里是我自己已经改过的信息.</p>
+<p>登录成功后,请按如图所示安装需要的软件:</p>
+<p><img src="http://ossdpnhoy.bkt.clouddn.com/V2.png" alt="V2"></p>
+<p>除上图外,还需要再多安装一个 PHP7.0</p>
+<p>安装完以上软件大概需要20分钟左右..</p>
+<h5 id="配置及搭建站点"><a href="#配置及搭建站点" class="headerlink" title="配置及搭建站点"></a>配置及搭建站点</h5><p>现在开始需要刚才提到的域名了.如果你购买了域名后还需要进行DNS解析,大概需要20分钟左右.具体方法自行搜索.</p>
+<ul>
+<li>添加站点<br><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTV3.png" alt="V3"></li>
+</ul>
+<p>这里你在解析的时候如果需要一个前端页面,那么需要去开一个二级页面.</p>
+<ul>
+<li>添加伪静态</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">location / &#123;</div><div class="line">           try_files $uri $uri/ /index.php$is_args$args;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><img src="http://ossdpnhoy.bkt.clouddn.com/VPSTV4.png" alt="V4"></p>
+<h4 id="搭建魔改V3站点"><a href="#搭建魔改V3站点" class="headerlink" title="搭建魔改V3站点"></a>搭建魔改V3站点</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">cd /www/wwwroot/www.nanki.vip</div><div class="line">git clone https://git.coding.net/mmmwhy/mod.git tmp &amp;&amp; mv tmp/.git . &amp;&amp; rm -rf tmp &amp;&amp; git reset --hard</div><div class="line">chown -R root:root *</div><div class="line">chmod -R 755 *</div><div class="line">chown -R www:www storage</div><div class="line">php composer.phar install         #必须安装，重要</div><div class="line">chattr -i .user.ini</div><div class="line">mv .user.ini ./public</div><div class="line">cd ./public</div><div class="line">chattr +i .user.ini</div></pre></td></tr></table></figure>
+<p><strong>注意:</strong> 记得将第一行换成自己的域名.</p>
+<ul>
+<li>完成后直接在宝塔控制面板中重启页面服务器nginx</li>
+</ul>
+<h4 id="下载modV3"><a href="#下载modV3" class="headerlink" title="下载modV3"></a>下载modV3</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https://git.coding.net/mmmwhy/mod.git tmp &amp;&amp; mv tmp/.git . &amp;&amp; rm -rf tmp &amp;&amp; git reset --hard</div></pre></td></tr></table></figure>
+<h4 id="解压安装设置定时任务"><a href="#解压安装设置定时任务" class="headerlink" title="解压安装设置定时任务"></a>解压安装设置定时任务</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">yum -y install vixie-cron crontabs</div><div class="line">rm -rf /var/spool/cron/root</div><div class="line">echo &apos;SHELL=/bin/bash&apos; &gt;&gt; /var/spool/cron/root</div><div class="line">echo &apos;PATH=/sbin:/bin:/usr/sbin:/usr/bin&apos; &gt;&gt; /var/spool/cron/root</div><div class="line">echo &apos;*/20 * * * * /usr/sbin/ntpdate pool.ntp.org &gt; /dev/null 2&gt;&amp;1&apos; &gt;&gt; /var/spool/cron/root</div><div class="line">echo &apos;30 22 * * * php /www/wwwroot/www.nanki.vip/xcat sendDiaryMail&apos; &gt;&gt; /var/spool/cron/root</div><div class="line">echo &apos;0 0 * * * php /www/wwwroot/www.nanki.vip/xcat dailyjob&apos; &gt;&gt; /var/spool/cron/root</div><div class="line">echo &apos;*/1 * * * * php /www/wwwroot/www.nanki.vip/xcat checkjob&apos; &gt;&gt; /var/spool/cron/root</div><div class="line">/sbin/service crond restart</div></pre></td></tr></table></figure>
+<p><strong>再次提醒:</strong>  记得将www.nanki.vip 换成自己的域名</p>
+<h5 id="导入SSPanel文件入数据库"><a href="#导入SSPanel文件入数据库" class="headerlink" title="导入SSPanel文件入数据库"></a>导入SSPanel文件入数据库</h5><p>下载<a href="http://pan.baidu.com/s/1jI69GgA" target="_blank" rel="external"> <font color="red">sspanel文件</font></a><br>暂时存好,马上要用到</p>
+<blockquote>
+<p>密码:163e<br>原谅我只有网盘….</p>
+</blockquote>
+<ul>
+<li>下载完后导入数据库里<br><img src="http://ossdpnhoy.bkt.clouddn.com/V8.png" alt="V8"></li>
+</ul>
+<p>之后,进入上边的那个phpmyadmin,新建sspanel数据库</p>
+<p><img src="http://ossdpnhoy.bkt.clouddn.com/V6.png" alt="V6"></p>
+<h5 id="配置config"><a href="#配置config" class="headerlink" title="配置config"></a>配置config</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi/wwwroot/www.nanki.vip/confing/.config.php</div></pre></td></tr></table></figure>
+<p><img src="http://ossdpnhoy.bkt.clouddn.com/vv1.png" alt="vv1"></p>
+<blockquote>
+<p>这时候页面搭好了默认的帐号是:ss@91vps.club 默认密码:91vps</p>
+</blockquote>
+<h5 id="修改管理员"><a href="#修改管理员" class="headerlink" title="修改管理员"></a>修改管理员</h5><p>在<br><code>cd  /www/wwwroot/www.nanki.vip/</code><br> 配置</p>
+<p>添加管理员<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">php xcat createAdmin</div></pre></td></tr></table></figure></p>
+<p>同时,还可以通过数据库后台修改默认管理员帐号</p>
+<p>下载客户端<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">php -n xat initdowonload</div></pre></td></tr></table></figure></p>
+<p>到此,如果前面没错魔改站点已经搭建完毕,接下来就只要安装SSR即可</p>
+<h3 id="SSR安装配置"><a href="#SSR安装配置" class="headerlink" title="SSR安装配置"></a>SSR安装配置</h3><h4 id="基本库安装"><a href="#基本库安装" class="headerlink" title="基本库安装"></a>基本库安装</h4><p>centos安装这个:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">yum update</div><div class="line">yum install git -y</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone  https://github.com/Nankis/shadowsocksr-1.git</div></pre></td></tr></table></figure>
+<p>执行完毕后此目录会新建一个shadowsocksr目录</p>
+<h4 id="安装依赖（cymysql）"><a href="#安装依赖（cymysql）" class="headerlink" title="安装依赖（cymysql）"></a>安装依赖（cymysql）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">cd shadowsocksr</div><div class="line"># 进入ShadowsocksR根目录</div><div class="line">bash setup_cymysql.sh</div><div class="line"># 安装Cymysql 依赖</div><div class="line">bash initcfg.sh</div><div class="line"># 初始化ShadowsocksR服务端</div></pre></td></tr></table></figure>
+<h4 id="服务端配置"><a href="#服务端配置" class="headerlink" title="服务端配置"></a>服务端配置</h4><p>shadowsocksr 根目录内，打开文件vi usermysql.json：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&quot;host&quot;: &quot;127.0.0.1&quot;, //前端mysql域名/IP</div><div class="line">&quot;port&quot;: 3306, //mysql端口</div><div class="line">&quot;user&quot;: &quot;ss&quot;, //mysql用户名</div><div class="line">&quot;password&quot;: &quot;pass&quot;, //mysql密码</div><div class="line">&quot;db&quot;: &quot;shadowsocks&quot;, //数据库名</div></pre></td></tr></table></figure>
+<h4 id="配置config-json文件"><a href="#配置config-json文件" class="headerlink" title="配置config.json文件"></a>配置config.json文件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi userapiconfig.py</div></pre></td></tr></table></figure>
+<p>找到这么一行:<br><strong>API_INTERFACE = ‘’sspanelv2’’</strong></p>
+<p>把 <strong>sspanelv2</strong> 修改成 <strong>sspanelv3</strong></p>
+<h4 id="修改数据库配置"><a href="#修改数据库配置" class="headerlink" title="修改数据库配置"></a>修改数据库配置</h4><p><strong>注意:</strong> 到此步骤后为了防止奇怪的错误,需要先去增加一个节点<br>登录你的域名网站,用管理员方式登录,进入最左下角的管理员面板<br>在节点列表的右下角有个加号,那里添加一个节点<br>如图所示:</p>
+<p><img src="http://ossdpnhoy.bkt.clouddn.com/VV3.png" alt="VV3"></p>
+<p>记住日本节点的ID: 3</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi usermysql.json</div></pre></td></tr></table></figure>
+<p><img src="http://ossdpnhoy.bkt.clouddn.com/VV2.png" alt="VV2"></p>
+<p>将图中的 <strong>‘’node_id’’:1,</strong>  的1 改成3;(和上图日本ID相同)</p>
+<h4 id="调试"><a href="#调试" class="headerlink" title="调试"></a>调试</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">python server.py</div></pre></td></tr></table></figure>
+<blockquote>
+<p>这句运行代码主要用于调试，关闭ssh后ss后端自动关闭，所以正式使用请使用下面的脚本运行！如果需要停止请按Ctrl+C键终止程序。</p>
+<p>这时可查看有运行情况，检查有没有错误。如果服务端没有错误，而连接不上，需要检查iptables或firewall(centos7)的防火墙配置</p>
+</blockquote>
+<h5 id="关于iptables的配置"><a href="#关于iptables的配置" class="headerlink" title="关于iptables的配置"></a>关于iptables的配置</h5><p>在配置iptables之前,先试着把iptables暂时关闭后试试看是否没问题了..如果运行没问题了.那就开始配置.配置方式参考  <a href="https://nankis.github.io/2017/07/08/CentOS67iptables%E9%85%8D%E7%BD%AE/" target="_blank" rel="external"><font color="red">我是传送门</font></a></p>
+<h4 id="通过脚本运行"><a href="#通过脚本运行" class="headerlink" title="通过脚本运行"></a>通过脚本运行</h4><p>脚本位于 shadowsocksr 根目录，如果你没有在这个目录，请先进入根目录cd shadowsocksr</p>
+<p>请分清楚，根目录 shadowsocksr 和子目录 shadowsocksr/shadowsocks ！<br>赋予脚本执行权限（执行一次就好）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">chmod +x *.sh</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./run.sh</div></pre></td></tr></table></figure>
+<blockquote>
+<p>后台运行 但不记录日志（ssh窗口关闭后也继续运行）</p>
+</blockquote>
+<h4 id="开机启动"><a href="#开机启动" class="headerlink" title="开机启动"></a>开机启动</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">chmod +x /etc/rc.d/rc.local</div><div class="line">vi /etc/rc.d/rc.local</div></pre></td></tr></table></figure>
+<h4 id="加速优化"><a href="#加速优化" class="headerlink" title="加速优化"></a>加速优化</h4><p>CentOS6和CentOS7 一键更换内核，一键安装锐速[lotServer][serverSpeeder ]</p>
+<p>支持KVM、VMWARE、Hyper-v、XEN 虚拟化技术的VPS</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">wget --no-check-certificate https://blog.asuhu.com/sh/ruisu.sh</div><div class="line">bash ruisu.sh</div></pre></td></tr></table></figure>
+<blockquote>
+<p>CentOS6和CentOS7 一键更换内核，完成后会重启</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">wget --no-check-certificate -O appex.sh</div><div class="line"> https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh &amp;&amp; chmod +x appex.sh &amp;&amp; bash appex.sh install</div></pre></td></tr></table></figure>
+<blockquote>
+<p>CentOS6和7 更换内核完成一键安装锐速[lotServer]</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">lsmod |grep appex</div></pre></td></tr></table></figure>
+<blockquote>
+<p>安装完成后检测是否启用</p>
+</blockquote>
+<p>到此为止,完整的安装宝塔面板+魔改MODV3+SSR就已完成.  中途有些简单步骤已省略.</p>
+<h4 id="测速"><a href="#测速" class="headerlink" title="测速"></a>测速</h4><p>关于测速,可以去找谷歌网盘测试,一些人测速喜欢用YouTube的统计，而实际上是仅供装逼….<br>其实那个不是很准…</p>
+<h4 id="参考来源"><a href="#参考来源" class="headerlink" title="参考来源:"></a><strong>参考来源:</strong></h4><ul>
+<li><p><a href="https://doub.io/" target="_blank" rel="external"><font color="red"> 逗逼根据地</font></a></p>
+</li>
+<li><p><a href="https://91vps.club" target="_blank" rel="external"><font color="red"> 91VPS</font></a></p>
+</li>
+</ul>
+<blockquote>
+<p>第一个需要梯子才能看, 第二个可能是大佬自己关了..</p>
+</blockquote>
+<h3 id="关于SSR及其他补充了解"><a href="#关于SSR及其他补充了解" class="headerlink" title="关于SSR及其他补充了解"></a>关于SSR及其他补充了解</h3><h4 id="Shadowsocks作者是谁？是否还在更新？"><a href="#Shadowsocks作者是谁？是否还在更新？" class="headerlink" title="Shadowsocks作者是谁？是否还在更新？"></a>Shadowsocks作者是谁？是否还在更新？</h4><p>Shadowsocks是由若干人因为兴趣而制作的一个项目，主要开发者和领导者是 @clowwindy ，</p>
+<p>但是在2015年下半年 被“相关部门”约谈喝茶，于是被迫删除Github的源码及相关文档。</p>
+<p><img src="http://ossdpnhoy.bkt.clouddn.com/vvv1.png" alt="VVV3"></p>
+<p>但Shadowsocks属于开源项目，所以删除前已经有人备份，同时由另一个志愿者跟进维护原版 Shadowsocks</p>
+<p> 客户端，而其他基于Shadowsocks项目的第三方项目有：</p>
+<p>ShadowsocksR、Shadowsocks-qt5、ShadowsocksCap等来维护更新Window/Linux客户端（其他系统的不一一举例了）。</p>
+<p>还有ShadowsocksR是breakwa11发起的shadowsocks分支，在shadowsocks的基础上增加了一些数据混淆方式</p>
+<p>称修复了部分安全问题并可以提高QoS优先级。后来贡献者Librehat也为shadowsocks补上了一些此类特性</p>
+<p>甚至增加了类似Tor的可插拔传输层功能。</p>
+<p>而在两个月前破娃似乎是遭到了威胁..在8000+人的TG群上宣布了解散群,以及放手SSR更新.</p>
+<p><img src="http://ossdpnhoy.bkt.clouddn.com/powa.png" alt="pw"></p>
+<h4 id="SSR的PAC是什么意思"><a href="#SSR的PAC是什么意思" class="headerlink" title="SSR的PAC是什么意思"></a>SSR的PAC是什么意思</h4><blockquote>
+<p>代理自动配置（英语：Proxy auto-config，简称PAC）是一种网页浏览器技术，用于定义浏览器该如何自动选择适当的代理服务器来访问一个网址。<br>一个PAC文件包含一个JavaScript形式的函数“FindProxyForURL(url, host)”。这个函数返回一个包含一个或多个访问规则的字符串。用户代理根据这些规则适用一个特定的代理器或者直接访问。当一个代理服务器&gt;无法响应的时候，多个访问规则提供了其他的后备访问方法。浏览器在访问其他页面以前，首先访问这&gt;个PAC文件。PAC文件中的URL可能是手工配置的，也可能是是通过网页的网络代理自发现协议（WPAD）自动配置的。<br>———— 截取自维基百科</p>
+</blockquote>
+<p>PAC中文名叫做代理自动配置，PAC其实就是 HTTP/SOCKS等代理服务器 + 网址规则，只有在你浏览器访问 网址规则中包含的网站 时才会走PAC文件中包含指定的HTTP/SOCKS代理服务器。</p>
+<p>因为Shadowsocks作者喝茶后，原本维护更新的PAC（GFWlist）文件也被删除，不过现在由ShadowsocksR作者接手维护了（Github项目），由网友不断的提交新的被墙的网址和IP。目前分为网址白名单、黑名单、黑白名单，同时也有ip的名单。所以有时候访问一些网站，可能被墙或者打开很慢.</p>
+<h4 id="SSR中的代理规则是什么"><a href="#SSR中的代理规则是什么" class="headerlink" title="SSR中的代理规则是什么"></a>SSR中的代理规则是什么</h4><p>ShadowsocksR目前分两种规则方式，那就是 PAC规则（系统代理模式） 和 代理规则 。</p>
+<p>PAC规则 是根据PAC文件中的黑白地址名单来判断那些网站走代理。也就是判断 流量是否进入客户端。</p>
+<p>当你要访问的网站满足 PAC里的设置，那么浏览器就会向代理服务器也就是客户端发送网站请求数据，这时候我们才进入了ShadowsocksR客户端，接下来我们就进入了代理规则判断环节。</p>
+<p>代理规则 是根据IP判断，按设定的规则来判断进入 客户端的流量是直连还是走代理。</p>
+<h4 id="关于-安全卫士-杀毒软件-浏览器-等说明"><a href="#关于-安全卫士-杀毒软件-浏览器-等说明" class="headerlink" title="关于 安全卫士/杀毒软件/浏览器 等说明"></a>关于 安全卫士/杀毒软件/浏览器 等说明</h4><p>各种国产杀毒/安全卫士和360/百度浏览器等软件都不能使用！简单给你们解释一下为什么。</p>
+<p>安全卫士和杀毒软件，常常会在你访问 有病毒/木马网站 或者 嘿嘿嘿的网站的时候，突然弹窗提醒你这个网站不安全什么的。</p>
+<p>他为什么知道这个网站不安全？因为他在监视你的一举一动，这很容易。</p>
+<p>然后明知道国内在正常途径是不可能访问Google等网站，结果你突然 访问了Google等被墙的网站，那 安全卫士/杀毒软件 又不是傻子，自然知道你在使用代理或者VPN等方式科学上网。</p>
+<p>杀毒软件和安全卫士都会以保护电脑不被侵害的理由监控电脑的一举一动，一旦你使用了vpn，他就可以检测到你正在使用vpn，虽然他无法知道你的传输数据，但是只要知道你在使用vpn就够了，然后再查询下你的ip就可以后台上传信息了，或许很快你的vpn的ip就被封了！</p>
+<p>浏览器同样也是，比如你访问了国内根本不可能通过正常途径访问的网站（Google、Youtube），这样子浏览器肯定就知道你用了代理或者vpn，然后就会查一下ip然后上传信息，同样就会被封。</p>
+<p>还有一些浏览器都有的同步数据功能，鬼知道他会不会借着同步你的数据作掩护去上传你的某些隐私和科学上网证据，反正加密了。对外声称这是在同步数据，骗过了大部分人。而且就算你关闭，他或许也会换个其他的理由继续上传，反正只要是个浏览器总不能禁止上传流量吧。</p>
+<p>很多人会说：“我用了360安全卫士和360浏览器也没见到我的vpn/ss被封啊？”这只能说是时候未到，我们不应该把自己的vpn/ss安全寄托到不靠谱的希望上！我们要未雨绸缪，在问题出现前清除隐患！</p>
+<p>大数据时代，就是要尽一切可能的收集任何用户的资料信息。</p>
+<blockquote>
+<p>PS:Win10系统自带的防御功能就很强了,没必要再装某管家…某卫士了…</p>
+</blockquote>
+<h4 id="关于保护隐私"><a href="#关于保护隐私" class="headerlink" title="关于保护隐私"></a>关于保护隐私</h4><p>360浏览器、百度浏览器等国内浏览器官方内置的科学上网功能都不支持使用，这些代理很可能会被用于中间人攻击。如果该“中间人”与浏览器官方同一阵线，那么浏览器验证机制就会放行这种攻击。国内产浏览器也不推荐使用，有用户透露，360浏览器在安装的过程中就引发了win7系统报警，证明该程序有规避认证的行为。全球三大桌面浏览器在隐私保护方面的比较一般认为，Firefox最优，其次是Chrome/Chromium，再其次是IE。</p>
+<p>发照片自爆是很多网友的喜好，但经常发表敏感政治言论的网友这方面就要小心些了，很容易因此被人肉搜索到。另，建议登陆海外网站的时候尽可能不使用和在大陆平台上同样的昵称和同样的本人照片头像，即便墙内身份暴露，只要否认墙外身份，“有关部门”就基本无法获取证据。</p>
+<p>很多社交平台都有分享地理位置的功能，比如墙内的微信、微博和墙外的推特等，但不推荐使用，如果您用的是苹果产品，可以直接选择在设置中关闭定位服务的方法来保护行踪隐私。</p>
+<p>有些网站希望用户输入求学就业经历，以便联系到同学同事互相添加。如果该应用是大陆开发的产品就不推荐使用这项功能。您肯定有其他方式联系到您觉得值得联系的同学和同事。</p>
+<p>尽可能不使用公共场合免费的wifi，如果遭遇恶意搭建的wifi，很容易被盗取个人信息，其他安全性不明的wifi网络也要谨慎选择。</p>
+<p>曾经有网友曝，小米手机和小米平板都会在用户使用加密数据或使用VPN科学上网時，窃取数据并发送到北京某服務器；360系列软件则会监控用戶的qq、skype等通讯窃取数据。对于后者已能基本确信，对于前者建议谨慎选择以防患于未然。</p>
+<p>国内产的杀毒软件也不推荐使用，比如：360“监控”猥士、腾讯“收集”管家、百度猥士，本网曾有报道，奇虎 360 投资的一家微型公司“麦芽地”，其前身是个人网站“麦克孤独”，被曝是“WireLurker(MacHook)”木马制作者和传播者。</p>
+<h3 id="一些有必要去了解的"><a href="#一些有必要去了解的" class="headerlink" title="一些有必要去了解的"></a>一些有必要去了解的</h3><p>关于科学上网这方面还有一些东西需要去了解,在这里我不再复制…自己去查吧</p>
+<ul>
+<li>CNNIC根证书的危险及清除方法（科学上网必读）</li>
+<li>如何防范中国网络“大炮”</li>
+<li>科学上网的注意事项及相关法律（必读）</li>
+</ul>
+]]></content>
+    </entry>
     
     <entry>
       <title><![CDATA[Nanki]]></title>
