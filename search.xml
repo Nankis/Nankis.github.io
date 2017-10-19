@@ -545,6 +545,20 @@
     </entry>
     
     <entry>
+      <title><![CDATA[CSharp]]></title>
+      <url>/2017/07/08/CSharp/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> C/C++ C# </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[关于CentOS6/7iptables的配合科学**的配置]]></title>
       <url>/2017/07/08/CentOS67iptables%E9%85%8D%E7%BD%AE/</url>
       <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>emmmmmm……</p>
@@ -648,6 +662,20 @@
     </entry>
     
     <entry>
+      <title><![CDATA[Python]]></title>
+      <url>/2017/07/08/Python/</url>
+      <content type="html"></content>
+      
+        <categories>
+            
+            <category> Python </category>
+            
+        </categories>
+        
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[关于s/*和谐*/s的搭建]]></title>
       <url>/2017/07/08/%E5%85%B3%E4%BA%8Ess%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
       <content type="html"><![CDATA[<h3 id="1-下载安装Xshell"><a href="#1-下载安装Xshell" class="headerlink" title="1.下载安装Xshell"></a>1.下载安装Xshell</h3><p>安装完后连接服务器</p>
@@ -732,34 +760,6 @@
         <categories>
             
             <category> 技术流 </category>
-            
-        </categories>
-        
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Python]]></title>
-      <url>/2017/07/08/Python/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> Python </category>
-            
-        </categories>
-        
-        
-    </entry>
-    
-    <entry>
-      <title><![CDATA[CSharp]]></title>
-      <url>/2017/07/08/CSharp/</url>
-      <content type="html"></content>
-      
-        <categories>
-            
-            <category> C/C++ C# </category>
             
         </categories>
         
